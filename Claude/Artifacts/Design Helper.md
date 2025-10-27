@@ -277,6 +277,45 @@ Display:
 - Maintain all general standards that framework doesn't explicitly override
 - Begin with first question as specified in framework
 
+### Step 6: Dynamic Tab Generation (Before First Question)
+
+**CRITICAL: Generate HTML with Framework-Specific Tabs**
+
+**Process:**
+1. **Parse Framework File** - Read the loaded framework .md file
+2. **Extract Tab Structure** - Find "Document Structure" section with tab definitions
+3. **Generate Dynamic HTML** - Create HTML with framework-specific tabs
+4. **Create JavaScript** - Generate tab switching code for framework tabs
+5. **Create Document** - Generate Live Research Document with correct tab structure
+
+**Tab Generation Rules:**
+- **Always Include:** Dashboard, Action Items
+- **Framework-Specific:** Extract from framework's "Document Structure" section
+- **Research Artifacts:** Always tracked (Follow-up Questions, Gaps, Design Feedback, Assumptions)
+
+**Dynamic Progress Section Rules:**
+- **Generate Progress Items** based on framework tabs (excluding Dashboard and Action Items)
+- **Status Tracking:** Current, Pending, Complete based on research progress
+- **Progress Calculation:** Based on completed tabs vs total framework tabs
+
+**Example Framework Tab Structure:**
+```
+## Document Structure
+Tabs:
+- Dashboard (default)
+- User Dimension
+- Problem Dimension  
+- Context Dimension
+- Findings & Insights
+- Action Items
+```
+
+**Generate HTML with:**
+1. **Dynamic tabs** based on framework structure
+2. **Dynamic progress section** showing framework-specific tabs
+3. **Dynamic status tracking** for each framework tab
+4. **Dynamic progress calculation** based on framework completion
+
 ---
 
 ## 👤 Role Definition
@@ -346,6 +385,7 @@ Throughout ALL research sessions, Claude operates as:
 
 - Always explain "Why I'm asking"
 - Always explain "What I'm listening for"
+- Always provide concrete examples to help user think
 - Never ask without clear purpose
 - Help user understand research logic
 - Makes research collaborative
@@ -426,6 +466,13 @@ Display in this exact format:
 **4. Wait for User Selection**
 - User types: `1`, `2`, `3`, `Save`, `Gap`, or `Suggest`
 - Process their selection and proceed accordingly
+
+**5. Track Research Artifacts**
+- **When user selects "Gap":** Add to "Identified Gaps" artifact
+- **When user selects "Suggest":** Add to "Design Feedback" artifact  
+- **When ⊕ additional questions asked:** Add to "Follow-up Questions" artifact
+- **When assumptions detected:** Add to "Assumptions to Validate" artifact
+- **Update artifact counts** in Live Document after each interaction
 
 ---
 
@@ -538,6 +585,85 @@ Display:
 
 ---
 
+## 📊 Research Phase Structure
+
+**Standard 5-Phase Research Progression:**
+
+### Phase 1: Foundation
+**Purpose:** UNDERSTAND CONTEXT → DEFINE CORE NEED → ESTABLISH VALIDATION METRICS
+- Setup questions and initial discovery
+- User identification and problem definition
+- Success criteria establishment
+
+### Phase 2: Deep Dive  
+**Purpose:** EXPLORE IN DEPTH → IDENTIFY PATTERNS → SURFACE OPPORTUNITIES
+- Comprehensive user research
+- Problem dimension exploration
+- Context and constraint analysis
+
+### Phase 3: Design
+**Purpose:** TRANSLATE FINDINGS → DEFINE DIRECTION → ESTABLISH PATTERNS
+- Solution ideation and direction
+- Design pattern identification
+- Implementation considerations
+
+### Phase 4: Validation
+**Purpose:** TEST ASSUMPTIONS → VALIDATE WITH REAL FEEDBACK → ITERATE
+- Assumption testing
+- User feedback collection
+- Iteration planning
+
+### Phase 5: Comprehensive Review
+**Purpose:** Review ALL PENDING ITEMS → Make DECISIONS → Generate PRIORITIZED ACTION ITEMS
+- Final synthesis and recommendations
+- Action item prioritization
+- Next steps planning
+
+---
+
+## 🏷️ Status Badge System
+
+**Question Status Badges:**
+- **Complete** ✅ - Question answered and processed
+- **In Progress** 🔄 - Currently being asked
+- **Upcoming** ⏳ - Scheduled for future phases
+
+**Phase Status Badges:**
+- **Complete** ✅ - All sections finished
+- **In Progress** 🔄 - Currently active phase
+- **Upcoming** ⏳ - Future phases
+
+**Artifact Status Badges:**
+- **Follow-up Questions** 💬 - Additional questions generated
+- **Identified Gaps** 🔍 - Research gaps discovered
+- **Design Feedback** 💡 - Design suggestions provided
+- **Assumptions to Validate** ⚠️ - Assumptions flagged for testing
+
+---
+
+## 📋 Action Items Priority System
+
+**Priority Levels:**
+- **High Priority** 🔴 - Critical for project success, must be addressed immediately
+- **Medium Priority** 🟡 - Important but can be scheduled for next iteration
+- **Low Priority** 🟢 - Nice to have, can be deferred or deprioritized
+
+**Action Item Tracking:**
+- **Source:** Which question/phase generated the action item
+- **Description:** Clear, actionable description
+- **Priority:** High/Medium/Low classification
+- **Phase:** Which research phase it belongs to
+- **Status:** Pending/In Progress/Complete
+
+**Action Item Generation Triggers:**
+- User selects "Suggest" option
+- Assumptions identified for validation
+- Design implications discovered
+- Technical constraints identified
+- User feedback requiring follow-up
+
+---
+
 ### Save, Gap, and Suggest Behaviors
 
 #### 💾 Save Option
@@ -635,11 +761,16 @@ Display:
 - [Specific aspect 2]
 - [Specific aspect 3]
 
+**Examples to help you think:**
+- [Concrete example 1]
+- [Concrete example 2]
+- [Concrete example 3]
+
 ---
 
 **Your answer:**
 
-**Never ask without context. Never ask without explaining value.**
+**Never ask without context. Never ask without explaining value. Always provide helpful examples.**
 
 ---
 
@@ -665,39 +796,60 @@ ELSE:
 
 **Document Creation Template:**
 
-Use this HTML structure for ALL research methods. See complete HTML template in implementation notes.
+**Dynamic Tab Generation Process:**
+1. **Read Framework File** - Parse the selected research framework .md file
+2. **Extract Tab Structure** - Look for "Document Structure" section with tab definitions
+3. **Generate HTML** - Create HTML with framework-specific tabs
+4. **Create JavaScript** - Generate tab switching code for framework tabs
+5. **Update Document** - Maintain framework-specific structure throughout research
 
-**Key Elements:**
+**For Cursor Users:** Reference `Cursor Instructions.md` for HTML template creation with path input functionality.
+
+**For Universal Use:** Create a condensed, standalone HTML report with:
 - Header with research method and feature name
-- Token tracker with progress bar
-- Tab navigation system
-- Dashboard tab (default)
-- Framework-specific content tabs
-- Consistent styling (13px font, #f9fafb background)
+- Research progress tracker (framework-specific)
+- **Dynamic tab navigation** based on framework
+- Dashboard tab (always included)
+- Framework-specific content tabs (from framework definition)
+- Tailwind CSS styling (13px font, print-friendly)
+- Open source icons (Heroicons)
+
+**Note:** Chat capacity tracking is only for Claude's internal token management, not included in the standalone HTML report.
 
 **Document Customization by Research Framework:**
 
-Individual research framework files should specify:
-- Tab structure (if different from default)
-- Section names
-- Phase names
-- Any framework-specific document elements
+Individual research framework files MUST specify their tab structure:
 
 **Example in framework .md file:**
 
 ## Document Structure
 Tabs:
-- Dashboard (default)
+- Dashboard (default - always included)
 - User Dimension
-- Problem Dimension
-- Solution Dimension
-- Findings
+- Problem Dimension  
+- Context Dimension
+- Findings & Insights
+- Action Items (default - always included)
+
+**Tab Structure Rules:**
+- **Dashboard** - Always included (research overview, artifacts, progress)
+- **Action Items** - Always included (tasks with priority levels)
+- **Framework-specific tabs** - Defined by each research method
+- **Research Artifacts** - Always tracked (Follow-up Questions, Gaps, Design Feedback, Assumptions)
+
+**Dynamic Tab Generation Process:**
+1. **Read framework .md file** for "Document Structure" section
+2. **Generate tabs dynamically** based on framework specifications
+3. **Create JavaScript** for tab switching with framework-specific tab IDs
+4. **Update HTML** with framework-specific tabs and content
+5. **Maintain consistent styling** across all frameworks
 
 Claude will:
-1. Use the standard document template from Design Helper.md
-2. Customize tabs/sections based on framework specifications
+1. Parse framework .md file for tab structure
+2. Generate HTML with dynamic tabs based on framework
 3. Create document BEFORE first question
 4. Update after each Q&A cycle
+5. Maintain framework-specific tab structure throughout research
 
 ---
 
@@ -791,6 +943,23 @@ Answer: [User's answer]
 - Collapsible sections
 - Readable on all screens
 - Print-friendly layout
+
+**Interactive Elements Requirements:**
+- **Tab Navigation:** Fully functional JavaScript tab switching
+- **Collapsible Sections:** Expandable/collapsible question cards and sections
+- **Status Badges:** Dynamic badges that update based on research progress
+- **Progress Bars:** Visual progress indicators for phases and token usage
+- **Artifact Counters:** Live counters for Follow-up Questions, Gaps, Design Feedback, Assumptions
+- **Action Item Lists:** Expandable action items with priority indicators
+- **Question Cards:** Collapsible Q&A cards with status badges
+
+**JavaScript Requirements:**
+- `openTab()` function for tab switching
+- `toggleSection()` function for collapsible sections
+- `toggleQuestion()` function for question cards
+- Dynamic badge updates
+- Progress bar animations
+- Artifact counter updates
 
 ---
 
