@@ -1244,16 +1244,11 @@ ELSE:
 
 **MANDATORY: Ensure Tailwind CSS loads properly in artifacts**
 
-**Tailwind CDN Implementation:**
-```html
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-```
-- Place in `<head>` section BEFORE closing `</head>` tag
-- Must be loaded for all Tailwind utility classes to work
+**Format:** HTML artifact with Tailwind CSS
 
-**Required Inline Styles (Mandatory):**
-Add these in `<style>` tag immediately after Tailwind CDN:
+**Required in `<head>` section:**
 ```html
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
     body { 
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -1278,7 +1273,6 @@ Add these in `<style>` tag immediately after Tailwind CDN:
     }
     .progress-bar { 
         transition: width 0.3s ease; 
-        background-color: #10b981;
     }
     @media print {
         .no-print { display: none; }
@@ -1287,11 +1281,11 @@ Add these in `<style>` tag immediately after Tailwind CDN:
 </style>
 ```
 
-**Why These Styles Are Critical:**
-- `body` styles: Base typography and layout even if Tailwind fails
-- `.tab-content` / `.tab-button`: Tab functionality requires these
-- `.progress-bar`: Visual feedback for research progress
-- `@media print`: Print-friendly output
+**Why these styles are mandatory:**
+- Tab switching requires `.tab-content` and `.tab-button` classes
+- Without these, JavaScript tab functionality breaks
+- Provides fallback if Tailwind CDN has issues
+- Ensures consistent appearance across all browsers
 
 **Icons Strategy:**
 - Use Unicode emoji (✅ 🔍 💡 📊 🎯 👂 💭 🤖 ✍️) 
