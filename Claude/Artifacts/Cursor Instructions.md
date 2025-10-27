@@ -246,6 +246,68 @@ function getNextVersion(folderPath, baseFilename) {
 - **Condensed view** (mobile-friendly, print-friendly)
 - **Self-contained** (works offline after initial load)
 
+#### Critical Styling Instructions for HTML Artifacts
+
+**MANDATORY: Ensure Tailwind CSS loads properly in artifacts**
+
+**Tailwind CDN Implementation:**
+```html
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+```
+- Place in `<head>` section BEFORE closing `</head>` tag
+- Must be loaded for all Tailwind utility classes to work
+
+**Required Inline Styles (Mandatory):**
+Add these in `<style>` tag immediately after Tailwind CDN:
+```html
+<style>
+    body { 
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 13px; 
+        line-height: 1.5; 
+        background-color: #f9fafb;
+        margin: 0;
+        padding: 0;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .tab-button { 
+        cursor: pointer; 
+        padding: 0.75rem 1.5rem;
+        border: none;
+        background: transparent;
+    }
+    .tab-button.active { 
+        background-color: #3b82f6; 
+        color: white; 
+        border-bottom: 2px solid #3b82f6;
+    }
+    .progress-bar { 
+        transition: width 0.3s ease; 
+        background-color: #10b981;
+    }
+    @media print {
+        .no-print { display: none; }
+        .tab-content { display: block !important; }
+    }
+</style>
+```
+
+**Why These Styles Are Critical:**
+- `body` styles: Base typography and layout even if Tailwind fails
+- `.tab-content` / `.tab-button`: Tab functionality requires these
+- `.progress-bar`: Visual feedback for research progress
+- `@media print`: Print-friendly output
+
+**Icons Strategy:**
+- Use Unicode emoji (✅ 🔍 💡 📊 🎯 👂 💭 🤖 ✍️) 
+- No external icon libraries needed
+- Universal compatibility across all browsers
+
+**Artifact Type:**
+- Always use `type="text/html"` for HTML documents
+- Ensures proper rendering in Claude artifact viewer
+
 #### Dynamic Template Structure:
 ```html
 <!DOCTYPE html>
@@ -383,6 +445,56 @@ function generateProgressSection(frameworkTabs) {
 
 **APPLIES TO ALL RESEARCH FRAMEWORKS - NO EXCEPTIONS**
 
+### ⚠️ CRITICAL: ONE QUESTION AT A TIME RULE
+
+**NEVER ASK MULTIPLE QUESTIONS SIMULTANEOUSLY**
+
+**❌ INCORRECT (Multiple Questions):**
+```
+Phase 1: Problem Identification
+I'll ask 5 key questions to understand the New Service Request Modal design challenge:
+
+1. User Context: Who are the primary users...
+2. Current Pain Points: If there's an existing flow...
+3. Request Complexity: What information needs...
+4. Integration Constraints: Does this modal need...
+5. Success Metrics: How will you measure...
+
+Please share what you can about these aspects...
+```
+
+**✅ CORRECT (One Question at a Time):**
+```
+## 🔍 **Q1: Who are the primary users experiencing issues with the service request modal?**
+
+### 🎯 **Why I'm asking:**
+[Purpose and strategic value]
+
+### 👂 **What I'm listening for:**
+- [Specific aspect 1]
+- [Specific aspect 2]
+- [Specific aspect 3]
+
+### 💭 **Examples to help you think:**
+- [Concrete example 1]
+- [Concrete example 2]
+- [Concrete example 3]
+
+### 🤖 **AI Suggested Options:**
+1) **[Option 1]** - [Brief explanation]
+2) **[Option 2]** - [Brief explanation]
+3) **[Option 3]** - [Brief explanation]
+4) **[Custom Response]** - [Your own answer]
+5) **Gap** - Flag this as a research gap needing more investigation
+6) **Suggest** - Provide design suggestions based on this answer
+7) **Design Discussion** - Open discussion about design implications
+8) **More Understanding** - Ask follow-up questions for deeper insight
+
+---
+
+### ✍️ **Your answer:**
+```
+
 ### Mandatory Question Elements
 
 **Every question in EVERY research framework MUST include:**
@@ -418,6 +530,25 @@ function generateProgressSection(frameworkTabs) {
 - ✅ **Provide all 8 action options** - Full interaction capability
 - ✅ **Use consistent formatting** - Standard appearance across frameworks
 - ✅ **Maintain interaction patterns** - Same user experience everywhere
+- ✅ **ASK ONE QUESTION AT A TIME** - Never multiple questions simultaneously
+- ✅ **Use visual formatting** - Icons and hierarchy as specified
+- ✅ **Wait for user response** - Complete current question before next
+
+### ⚠️ STRICT COMPLIANCE REQUIREMENTS
+
+**VIOLATIONS THAT ARE NOT ALLOWED:**
+- ❌ **Multiple questions at once** - "I'll ask 5 key questions..."
+- ❌ **Phase descriptions without questions** - "Phase 1: Problem Identification"
+- ❌ **Missing visual formatting** - No icons or hierarchy
+- ❌ **Missing AI suggested options** - Less than 8 options
+- ❌ **Missing confirmation patterns** - No understanding confirmation
+- ❌ **Deviating from format** - Any variation from standard format
+
+**ENFORCEMENT:**
+- **Immediate correction required** - Stop and reformat if violations detected
+- **No exceptions** - Even if framework suggests different approach
+- **Consistent application** - Same format across all research methods
+- **User experience priority** - Format consistency over framework flexibility
 
 **NO FRAMEWORK CAN DEVIATE FROM THESE STANDARDS**
 
