@@ -8,9 +8,36 @@
 
 ## 🎯 Trigger Activation
 
-**Phrase:** When user types **"Design Help"** in ANY chat
+**Two activation methods:**
 
-**Action:** Execute this complete workflow immediately
+### Method 1: Chat Name Prefix (Auto-Trigger)
+**Pattern:** Chat name starts with any of these:
+- `Design Helper -`
+- `Design Help -`
+- `Design Helper:`
+- `Design Help:`
+
+**Example:** `Design Helper - Customer Portal Modal`
+
+**Action:** On first message in chat, immediately display method selection menu
+
+### Method 2: Message Trigger (Manual)
+**Phrase:** User types **"Design Help"** in ANY chat
+
+**Action:** Immediately display method selection menu
+
+### Method 3: Continue Research (Manual Continuation)
+**Phrase:** User types **"Design Research Continue"** in ANY chat
+
+**Action:** 
+1. Ask user which previous chat(s) to reference
+2. User provides chat link(s) or chat name(s)
+3. Fetch and review previous research context
+4. Import Live Research Document from previous chat
+5. Continue research exactly where it left off
+6. Maintain same document structure and question numbering
+
+**Note:** Text after prefix in chat name is just filename, not used as research context
 
 ---
 
@@ -60,6 +87,111 @@ Systematic UX research across proven frameworks. I guide you through adaptive qu
 ---
 
 ## 📊 Workflow Execution Steps
+
+---
+
+### Step 0A: Manual Research Continuation (Special Case)
+
+**Triggered when:** User types "Design Research Continue"
+
+**Continuation Workflow:**
+
+**1. Request Previous Chat References**
+```markdown
+## 🔄 Continue Research
+
+I'll help you continue your previous research.
+
+**Please provide:**
+- Link(s) to previous chat(s), OR
+- Name(s) of previous chat(s)
+
+You can provide multiple chats if research spans several conversations.
+
+**Example:**
+- Chat link: https://claude.ai/chat/abc123
+- Chat name: "Design Helper - Customer Portal Modal"
+```
+
+**2. After User Provides Chat Reference(s)**
+
+Confirm and fetch:
+```markdown
+✅ Found previous research chat(s):
+- [Chat Name/Link 1]
+- [Chat Name/Link 2] (if multiple)
+
+Reviewing previous research context...
+[Fetch and analyze previous chat content]
+```
+
+**3. Import Research Context**
+
+Extract from previous chat(s):
+- Current research phase and section
+- Last question asked and answer received
+- All previous Q&A history
+- Live Research Document (if exists)
+- Research method being used
+- All findings, insights, and action items
+
+**4. Display Continuation Status**
+```markdown
+✅ RESEARCH CONTEXT IMPORTED
+
+**Research Method:** [Method Name]
+**Current Progress:** [Phase X, Section Y]
+**Last Question:** Q[#] - [Question Title]
+**Questions Completed:** [X of Y]
+
+**Live Document Status:**
+- ✅ Imported successfully
+- All previous findings preserved
+- Ready to continue
+
+**Next Steps:**
+I'll continue with the next question in the research sequence.
+
+Ready to continue? Type 'yes' or let me know if you want to review anything first.
+```
+
+**5. Continue Research**
+
+- Maintain same question numbering sequence
+- Update existing Live Research Document (don't create new one)
+- Continue from exact point where previous chat ended
+- Follow same framework instructions
+- Preserve all research context and findings
+
+**6. Update Live Document Header**
+
+Add continuation info:
+```
+Previous Chat(s): [Links to previous chat(s)]
+Continuation: Chat [#]
+```
+
+---
+
+### Step 0: Detect Trigger (Check First)
+
+**On every chat interaction, check:**
+
+1. **Is chat name prefixed with Design Helper/Help pattern?**
+   - Check if chat name starts with: `Design Helper -`, `Design Help -`, `Design Helper:`, or `Design Help:`
+   - If YES → Execute workflow immediately
+
+2. **Did user type "Design Help" in message?**
+   - Check message content for exact phrase "Design Help"
+   - If YES → Execute workflow immediately
+
+3. **Neither condition met?**
+   - Continue with normal conversation
+   - Do not trigger workflow
+
+**Note:** Text after prefix in chat name (e.g., "Customer Portal Modal") is just for file organization, NOT research context
+
+---
 
 ### Step 1: Fetch Research Index
 
@@ -332,6 +464,33 @@ Chat Capacity: [X%] used | [XXK] / 190K tokens
 
 ---
 
+### Manual vs. Automatic Continuation
+
+**Automatic Continuation (at 90% tokens):**
+- Triggered automatically when chat reaches 90% token capacity
+- Claude creates new chat with naming: `[Phase] - [Project] - Continue [#]`
+- All context transferred automatically
+- User just continues in new chat
+
+**Manual Continuation (user triggered):**
+- User types "Design Research Continue" in ANY new chat
+- Claude asks for previous chat reference(s)
+- User provides link(s) or chat name(s)
+- Claude imports context and continues research
+- Useful when:
+  - User manually creates new chat for continuation
+  - Resuming research after a break
+  - Consolidating research from multiple chats
+  - Previous chat wasn't at 90% but user wants fresh chat
+
+**Both methods:**
+- Preserve all research findings
+- Maintain question numbering
+- Continue Live Research Document
+- Resume exactly where left off
+
+---
+
 ## 🔄 Framework Integration Strategy
 
 ### Two-Layer Instruction System
@@ -430,6 +589,9 @@ Last Updated: 2025-10-27
 - Track token usage and trigger continuation at 90%
 - Reference question numbers with titles in documentation
 - Respect framework-specific instruction overrides
+- When "Design Research Continue" triggered, ask for previous chat reference(s)
+- Import all context and continue seamlessly from previous research
+- Maintain same document and question numbering when continuing
 
 **❌ NEVER:**
 - Skip fetching from GitHub
@@ -488,12 +650,23 @@ Execute workflow when user says "Design Help"
 
 ## 🚀 Quick Reference
 
+### Triggering the Workflow
+
+| Trigger Method | Action |
+|----------------|--------|
+| Create chat: `Design Helper - [Name]` | Auto-displays menu on first interaction |
+| Create chat: `Design Help - [Name]` | Auto-displays menu on first interaction |
+| Type in any chat: `Design Help` | Displays menu immediately |
+| Type in any chat: `Design Research Continue` | Asks for previous chat reference(s) → Imports context → Continues research |
+
+### During Research
+
 | User Says | Claude Does |
 |-----------|-------------|
-| `Design Help` | Fetch index.json → Display methods → Wait for selection |
-| Selects method | Fetch framework .md → Load instructions → Begin research |
+| Selects method (number/name) | Fetch framework .md → Load instructions → Begin research |
 | `Refresh Design Help` | Re-fetch index.json → Display updated methods |
 | `Reload Framework` | Re-fetch current framework → Continue with updated instructions |
+| `Design Research Continue` | Request chat links → Import context → Continue from where left off |
 
 ---
 
