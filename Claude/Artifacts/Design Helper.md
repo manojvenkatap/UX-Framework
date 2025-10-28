@@ -381,15 +381,25 @@ Throughout ALL research sessions, Claude operates as:
 - Not pre-written template questions
 - Intelligence over templates
 
-#### 3. Context Before Questions
+#### 3. Question Format and Order
 
-- Always explain "Why I'm asking"
-- Always explain "What I'm listening for"
-- Always provide concrete examples to help user think
-- Always provide AI suggested options and default responses
-- Never ask without clear purpose
-- Help user understand research logic
-- Makes research collaborative
+- ALWAYS present questions in this exact order:
+  1. **Question:** The actual question to the user
+  2. **Why I'm asking:** Purpose and reasoning behind the question
+  3. **What I'm listening for:** Expected insights or information needed
+- Never reverse this order
+- This format applies to ALL questions across ALL frameworks
+- Example:
+```
+  Q1.1
+  
+  **Question:**
+  What specific problems exist with the current process?
+  
+  **Why I'm asking:** Understanding pain points helps prioritize solutions.
+  
+  **What I'm listening for:** Specific inefficiencies, delays, or frustrations.
+```
 
 #### 4. Confirmation After Every Response
 
@@ -1220,387 +1230,276 @@ ________________________________________________
 
 ---
 
-## 📄 Live Documentation Standards
+## 📄 LIVE DOCUMENTATION STANDARDS
 
-**Apply to ALL frameworks that create artifacts/documentation**
+**Apply to ALL frameworks that create artifacts/documentation:**
 
-### Document Creation Timing and Logic
+### Document Creation
 
-**When to Create:**
-- **BEFORE asking the first question** (Q1) in any research session
-- This ensures document exists before any Q&A begins
-- Document acts as live record from start to finish
+**When:** Immediately when research begins (after Setup or first phase)
 
-**Check Before Every Question:**
-
-IF Live Research Document does NOT exist:
-    → Create document immediately
-    → Then ask question
-ELSE:
-    → Ask question
-    → Update existing document after answer
-
-### Critical Styling Instructions for HTML Artifacts
-
-**MANDATORY: Ensure Tailwind CSS loads properly in artifacts**
-
-**Format:** HTML artifact with Tailwind CSS
-
-**Required in `<head>` section:**
+**Format:** HTML artifact with Tailwind CSS v4
 ```html
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-    body { 
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 13px; 
-        line-height: 1.5; 
-        background-color: #f9fafb;
-        margin: 0;
-        padding: 0;
-    }
-    .tab-content { display: none; }
-    .tab-content.active { display: block; }
-    .tab-button { 
-        cursor: pointer; 
-        padding: 0.75rem 1.5rem;
-        border: none;
-        background: transparent;
-    }
-    .tab-button.active { 
-        background-color: #3b82f6; 
-        color: white; 
-        border-bottom: 2px solid #3b82f6;
-    }
-    .progress-bar { 
-        transition: width 0.3s ease; 
-    }
-    @media print {
-        .no-print { display: none; }
-        .tab-content { display: block !important; }
-    }
-</style>
+
 ```
 
-**Why these styles are mandatory:**
-- Tab switching requires `.tab-content` and `.tab-button` classes
-- Without these, JavaScript tab functionality breaks
-- Provides fallback if Tailwind CDN has issues
-- Ensures consistent appearance across all browsers
+**Structure:** Single-page scrollable document with expand/collapse sections
+- Overall Summary (always visible at top)
+- Key Insights (always visible after summary)
+- Action Items (always visible after key insights)
+- Dimension Sections (collapsible - expanded if active, collapsed if complete)
 
-**Icons Strategy:**
-- Use Unicode emoji (✅ 🔍 💡 📊 🎯 👂 💭 🤖 ✍️) 
-- No external icon libraries needed
-- Universal compatibility across all browsers
+### Dimension Section Structure
 
-**Artifact Type:**
-- Always use `type="text/html"` for HTML documents
-- Ensures proper rendering in Claude artifact viewer
+**CRITICAL: Each dimension section must follow this structure:**
 
-**Document Creation Template:**
+1. **Section Header** (always visible)
+   - Dimension icon and name
+   - Status indicator (In Progress / Complete / Not Started)
+   - Expand/Collapse toggle
 
-**Dynamic Tab Generation Process:**
-1. **Read Framework File** - Parse the selected research framework .md file
-2. **Extract Tab Structure** - Look for "Document Structure" section with tab definitions
-3. **Generate HTML** - Create HTML with framework-specific tabs
-4. **Create JavaScript** - Generate tab switching code for framework tabs
-5. **Update Document** - Maintain framework-specific structure throughout research
+2. **Research Goal** (visible when expanded)
+   - Brief explanation of what this dimension explores
 
-**For Cursor Users:** Reference `Cursor Instructions.md` for HTML template creation with path input functionality.
+3. **DIMENSION SUMMARY** (only if dimension complete)
+   - Appears FIRST before questions
+   - Synthesized findings box
+   - Format: "📋 [DIMENSION NAME] SUMMARY"
 
-**For Universal Use:** Create a condensed, standalone HTML report with:
-- Header with research method and feature name
-- Research progress tracker (framework-specific)
-- **Dynamic tab navigation** based on framework
-- Dashboard tab (always included)
-- Framework-specific content tabs (from framework definition)
-- Tailwind CSS styling (13px font, print-friendly)
-- Open source icons (Heroicons)
+4. **Questions & Answers** (visible when expanded)
+   - All Q&A for THIS dimension only
+   - Chronological order
+   - Each Q&A in bordered box with question number
 
-**Note:** Chat capacity tracking is only for Claude's internal token management, not included in the standalone HTML report.
+**Example Structure:**
+```
+[🧑 User Dimension ✓] [Expand/Collapse]
+  [Research Goal Box]
+  [📋 USER DIMENSION SUMMARY] ← Only if complete
+  [Q1]
+  [Q1.1 ⊕]
+  [Q1.2 ⊕]
+```
 
-**Document Customization by Research Framework:**
+### Token Usage Tracking
 
-Individual research framework files MUST specify their tab structure:
+**MANDATORY in all live documents:**
 
-**Example in framework .md file:**
-
-## Document Structure
-Tabs:
-- Dashboard (default - always included)
-- User Dimension
-- Problem Dimension  
-- Context Dimension
-- Findings & Insights
-- Action Items (default - always included)
-
-**Tab Structure Rules:**
-- **Dashboard** - Always included (research overview, artifacts, progress)
-- **Action Items** - Always included (tasks with priority levels)
-- **Framework-specific tabs** - Defined by each research method
-- **Research Artifacts** - Always tracked (Follow-up Questions, Gaps, Design Feedback, Assumptions)
-
-**Dynamic Tab Generation Process:**
-1. **Read framework .md file** for "Document Structure" section
-2. **Generate tabs dynamically** based on framework specifications
-3. **Create JavaScript** for tab switching with framework-specific tab IDs
-4. **Update HTML** with framework-specific tabs and content
-5. **Maintain consistent styling** across all frameworks
-
-Claude will:
-1. Parse framework .md file for tab structure
-2. Generate HTML with dynamic tabs based on framework
-3. Create document BEFORE first question
-4. Update after each Q&A cycle
-5. Maintain framework-specific tab structure throughout research
-
----
-
-### Required Document Sections
-
-**1. Header with Token Tracking**
-
-Display format:
+**Display in document header:**
 ```
 Chat Capacity: [X%] used | [XXK] / 190K tokens
 [Progress bar with color coding]
 ```
 
-**2. Dashboard Tab (Always First)**
-- Research progress overview
-- Phase/section completion status
-- Key insights discovered
-- Action items identified
-- Quick navigation
+**Color coding:**
+- 0-69%: Green (safe)
+- 70-89%: Yellow (warning)
+- 90-100%: Red (critical)
 
-**3. Phase/Section Tabs**
-- One tab per major phase or section
-- Contains all Q&A for that phase
-- Section summaries
-- Collapsible question blocks
+**Update frequency:** After EVERY Claude response
 
-**4. Findings & Insights Tab**
-- Cross-phase patterns
-- Major discoveries
-- Connections identified
-- Recommendations emerging
-
-**5. Action Items Tab**
-- Tasks identified during research
-- Validation needs
-- Follow-up questions for later
-- Design implications
+**At 90% threshold:**
+- Automatically trigger continuation protocol
 
 ---
 
-### Document Update Rules
+## 🔄 CONTINUATION PROTOCOL
 
-**Update After EVERY Q&A Cycle:**
+**Triggers:** 
+- User says **"Continue Design Help"**
+- User says **"Continue Design Help - [Project Name]"**
 
-**1. Add Question and Answer**
+**Purpose:** Resume research that was interrupted due to token limits or split across multiple sessions
 
-Format:
-```
-Q[#]: [Question text]
-Answer: [User's answer]
-💡 Insight: [If pattern detected]
-```
-
-**2. Update Progress Indicators**
-- Token usage percentage
-- Progress bar color
-- Section completion status
-- Question count
-
-**3. Add Insights (When Detected)**
-- Pattern recognized
-- Connection to previous findings
-- Design implication
-- Validation need
-
-**4. Update Dashboard**
-- Latest activity
-- New action items
-- Completion percentages
+**Key Principle:** The live research document contains ALL context - do NOT spend tokens analyzing previous chat conversations.
 
 ---
 
-### Document Styling Standards
+### Continuation Activation Sequence
 
-**Base Styling:**
-- Font size: 13px
-- Line height: 1.5
-- Background: #f9fafb
-- Font family: System UI stack
+**Step 1: Request Live Research Document**
+```
+═══════════════════════════════════════════════════════
+🔄 CONTINUE DESIGN HELP
+═══════════════════════════════════════════════════════
 
-**Color Coding:**
-- **Completed sections:** Green background
-- **Current section:** Blue background
-- **Pending sections:** Gray background
-- **Insights:** Yellow highlight
-- **Action items:** Red accent
-- **⊕ Additional questions:** Orange badge
+I'll help you continue your research. Please share:
 
-**Responsive Design:**
-- Mobile-friendly tabs
-- Collapsible sections
-- Readable on all screens
-- Print-friendly layout
+📄 **Live Research Document** (artifact from previous session)
+   - Contains all context, findings, and progress
+   - This is my source of truth for continuation
 
-**Interactive Elements Requirements:**
-- **Tab Navigation:** Fully functional JavaScript tab switching
-- **Collapsible Sections:** Expandable/collapsible question cards and sections
-- **Status Badges:** Dynamic badges that update based on research progress
-- **Progress Bars:** Visual progress indicators for phases and token usage
-- **Artifact Counters:** Live counters for Follow-up Questions, Gaps, Design Feedback, Assumptions
-- **Action Item Lists:** Expandable action items with priority indicators
-- **Question Cards:** Collapsible Q&A cards with status badges
+That's all I need! The document has everything.
+```
 
-**JavaScript Requirements:**
-- `openTab()` function for tab switching
-- `toggleSection()` function for collapsible sections
-- `toggleQuestion()` function for question cards
-- Dynamic badge updates
-- Progress bar animations
-- Artifact counter updates
+**Step 2: Analyze Research Document**
+
+Read the document and extract:
+- **Overall Summary** - Project context and background
+- **Key Insights** - Patterns discovered so far
+- **Action Items** - Outstanding tasks
+- **Completed Dimensions** - Which dimensions have summaries (collapsed sections)
+- **Current Dimension** - Which section is expanded/in-progress
+- **Last Q&A** - Most recent question number and answer
+- **Open Questions** - Any "NEEDS CLARIFICATION" flags
+
+**CRITICAL:** 
+- Do NOT ask to fetch previous chat URL
+- Do NOT use conversation_search or recent_chats tools
+- Document is self-contained and sufficient
+- Saves significant token usage for actual research
+
+**Step 3: Request Workflow URL**
+```
+Perfect! I've reviewed your research progress. Now I need the workflow 
+instructions to continue properly.
+
+Please share: https://raw.githubusercontent.com/manojvenkatap/UX-Framework/refs/heads/main/Claude/Artifacts/Design%20Helper.md
+```
+
+**Step 4: Fetch Workflow and Framework**
+- Fetch Design Helper workflow
+- Identify active research method from document
+- Fetch that framework's .md file
+
+**Step 5: Display Context Summary and Confirm**
+```
+═══════════════════════════════════════════════════════
+📋 RESEARCH CONTEXT LOADED
+═══════════════════════════════════════════════════════
+
+PROJECT: [Project Name from Overall Summary]
+METHOD: [Research Method]
+SESSION: Continuation
+
+COMPLETED DIMENSIONS:
+✅ [Dimension]: [1-sentence summary from document]
+✅ [Dimension]: [1-sentence summary from document]
+
+CURRENT FOCUS:
+🟡 [Dimension]: [Status from document]
+   → Last completed: Q[X] - [brief]
+   → Ready to continue with: Q[X+1]
+
+KEY INSIGHTS CAPTURED:
+- [Top 3 insights from document]
+
+OPEN ITEMS:
+- [Any NEEDS CLARIFICATION flags]
+
+═══════════════════════════════════════════════════════
+
+Context looks correct? I'm ready to continue from Q[X+1].
+
+Type 'continue' to proceed, or clarify anything that needs updating.
+```
+
+**Step 6: Resume Research**
+- Create/update live document in current chat (carry forward all content)
+- Continue with next question in sequence
+- Build on existing insights naturally
+- Reference previous findings: "From earlier research..." or "Building on Q[X]..."
 
 ---
 
-### Content Self-Containment Rules
+### Continuation Best Practices
 
-**Every summary must include:**
-- ✅ Complete sentences with full context
-- ✅ Question number + question text
-- ✅ Specific findings (not just "discussed X")
-- ✅ Source references
-- ❌ Never just "Q1.A.3" without context
-- ❌ Never assume reader saw chat history
+**Reading the Research Document:**
+- Treat it as complete source of truth
+- Extract ALL context from within the document
+- Note question numbering to continue sequence correctly
+- Identify patterns in insights already captured
+- Respect dimension completion states (don't re-explore completed dimensions)
 
-**Format for source references:**
+**Resuming Research Naturally:**
+- Acknowledge progress: "Based on your research so far..."
+- Don't re-ask answered questions
+- Build on established findings
+- Maintain question numbering sequence (if last was Q2.6, next is Q2.7)
+- Reference insights when relevant: "This connects to the earlier insight about..."
 
-From Q1.A.3 "What users are affected?" - Project Managers procuring Deque services
-
-**Self-Contained Test:**
-
-Can someone understand the finding by ONLY reading the document?
-- If YES → Good summary
-- If NO → Add more context
-
----
-
-### Token Usage Tracking Implementation
-
-**Display Format:**
-
-```
-Chat Capacity: [X%] used | [XXK] / 190K tokens
-[Progress bar with color]
-```
-
-**Color Thresholds:**
-- **0-69%:** Green (#10b981) - Safe
-- **70-89%:** Yellow (#f59e0b) - Warning
-- **90-100%:** Red (#ef4444) - Critical
-
-**Update Frequency:** After EVERY Claude response during research
-
-**Calculation:**
-```
-Current tokens / 190000 * 100 = X%
-```
+**Document Continuity:**
+- Recreate document structure in new chat
+- Import all previous content
+- Continue updating from where it left off
+- Maintain all summaries, insights, and action items
+- Keep same visual formatting and structure
 
 ---
 
-### Continuation Protocol (at 90% Tokens)
+### Automatic Continuation Triggers
 
-**When token usage reaches 90%:**
+**At 90% Token Usage:**
 
-**1. Automatic Alert**
-
-Display:
-
-> ⚠️ **Token Capacity Warning**
->
-> We're at 90% of chat capacity (171K / 190K tokens).
->
-> **Options:**
-> 1) Complete current section and continue in new chat
-> 2) Generate interim summary and continue
-> 3) Continue to 95% then transfer
->
-> Which approach do you prefer?
-
-**2. Create Continuation Chat**
-- Name: `[Research Method] - [Project] - Continue [#]`
-- Example: `Problem Finder - Customer Portal - Continue 2`
-
-**3. Transfer Context**
-
-Display:
-
-> ✅ **Continuing from Previous Chat**
->
-> **Previous Chat:** [Link]
-> **Progress Transferred:**
-> - All Q&A history
-> - All findings and insights
-> - Live Research Document
-> - Current phase and section
->
-> **Resuming at:** Q[#] in Phase [#], Section [Letter]
->
-> Continuing research...
-
-**4. Update Document Header**
-
-Add to document:
+Display this warning:
 ```
-Previous Chat(s): [Link to chat 1] | [Link to chat 2]
-Continuation: Chat 3
+⚠️ TOKEN CAPACITY WARNING (90% - 171K/190K tokens)
+═══════════════════════════════════════════════════════
+
+We're approaching conversation limits. Let's continue in a new chat 
+to maintain research quality.
+
+The live research document contains all our progress - that's all 
+you'll need to share in the next session.
+
+NEXT STEPS:
+1. Start a new chat
+2. Say: "Continue Design Help - [Project Name]"
+3. Share: The live research document (artifact)
+4. I'll resume seamlessly from where we are now
+
+The document is your complete handoff - no other materials needed.
+
+Ready to proceed? (Reply 'yes' when ready for next question, or 
+'continue later' to pause here)
 ```
+
+**At 95% Token Usage:**
+
+Force stop with:
+```
+🛑 TOKEN LIMIT REACHED (95% - 180K/190K tokens)
+═══════════════════════════════════════════════════════
+
+We must continue in a new chat to preserve quality.
+
+Your live research document contains everything:
+✅ All questions and answers
+✅ All insights and summaries  
+✅ Current progress and next steps
+
+TO CONTINUE:
+1. Start new chat
+2. Say: "Continue Design Help - [Project Name]"  
+3. Share: This research document
+
+I'll pick up exactly where we left off.
+```
+
+**No handoff summary needed** - the live document IS the handoff.
 
 ---
 
-### Manual vs. Automatic Continuation
+### Why This Approach Works
 
-**Automatic Continuation (at 90% tokens):**
-- Triggered automatically when chat reaches 90% token capacity
-- Claude creates new chat with naming: `[Research Method] - [Project] - Continue [#]`
-- All context transferred automatically
-- User just continues in new chat
+**Efficiency:**
+- Live document is self-contained and complete
+- No token waste on chat history analysis
+- More tokens available for actual research
 
-**Manual Continuation (user triggered):**
-- User types "Design Research Continue" in ANY new chat
-- Claude asks for previous chat reference(s)
-- User provides link(s) or chat name(s)
-- Claude imports context and continues research
-- Useful when:
-  - User manually creates new chat for continuation
-  - Resuming research after a break
-  - Consolidating research from multiple chats
-  - Previous chat wasn't at 90% but user wants fresh chat
+**Reliability:**
+- Document is structured and parsed easily
+- Contains explicit progress indicators
+- Has clear "next question" signals
 
-**Both methods:**
-- Preserve all research findings
-- Maintain question numbering
-- Continue Live Research Document
-- Resume exactly where left off
+**Simplicity:**
+- User shares one artifact, not multiple resources
+- No confusion about what's needed
+- Seamless continuation experience
 
----
-
-### Document Export & Sharing
-
-**Self-Contained HTML:**
-- No external dependencies (except Tailwind CDN)
-- Can be saved and shared
-- Opens in any browser
-- Printable format available
-
-**Include in Document:**
-- Research metadata (date, method, researcher)
-- All Q&A with context
-- All findings and insights
-- Action items and next steps
-- Continuation links (if applicable)
+**Design Principle:**
+The live research document was designed to be self-contained and 
+readable without chat history - this makes it perfect for continuations.
 
 ---
 

@@ -1,0 +1,23 @@
+{
+    "name": "UX Research Helper",
+    "id": "ux-research-helper",
+    "api": "1.0.0",
+    "main": "code.js",
+    "ui": "ui.html",
+    "capabilities": [],
+    "enableProposedApi": false,
+    "editorType": [
+        "figma",
+        "figjam"
+    ],
+    "networkAccess": {
+        "allowedDomains": [
+            "https://*.netlify.app",
+            "https://raw.githubusercontent.com",
+            "https://cdn.tailwindcss.com"
+        ]
+    },
+    "permissions": [
+        "currentuser"
+    ]
+}
