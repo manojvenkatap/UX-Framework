@@ -8,15 +8,49 @@ Comprehensive problem discovery framework that explores problems from multiple d
 
 ---
 
-## Document Structure
+## Research Phases
 
-**Tabs for Live Research Document:**
-- Dashboard (default)
-- User Dimension
-- Problem Dimension  
-- Context Dimension
-- Findings & Insights
-- Action Items
+### Phase 1: Background Context (MANDATORY FIRST)
+
+**Purpose:** Establish essential context before any dimension exploration
+
+**CRITICAL:** These questions MUST be asked FIRST for every research engagement, regardless of research type. This is not part of Problem Dimension - this is setup that happens BEFORE dimensional exploration begins.
+
+**Required Background Questions (in this order):**
+
+**BG.1 - Problem Statement**
+**Question:** What is the problem you are trying to solve?
+**Why asking:** Need clear understanding of the core challenge
+**Listening for:** Specific problem description, user impact, business need
+
+**BG.2 - Problem Type**
+**Question:** Is this an existing problem you're trying to fix, or a new feature/capability you're building?
+**Why asking:** Existing problems require understanding current pain points; new features require understanding goals and opportunities
+**Listening for:** Whether there's a current broken state or if this is net-new functionality
+
+**BG.3 - Existing Designs (if applicable)**
+**Question:** [If existing problem] Are there any current designs or implementations for this? If yes, can you share them?
+**Why asking:** Existing designs provide crucial context about what's been tried and why it's not working
+**Listening for:** Links to designs, explanations of current approach, known issues
+
+**BG.4 - Requirements**
+**Question:** Do you have any specific requirements or constraints for solving this problem?
+**Why asking:** Need to understand guardrails, must-haves, and deal-breakers upfront
+**Listening for:** Technical constraints, business requirements, accessibility needs, timeline constraints
+
+**BG.5 - Additional Context**
+**Question:** Is there anything else important I should know before we start the research?
+**Why asking:** Catch any critical context that wasn't covered
+**Listening for:** Stakeholder concerns, political context, related initiatives, assumptions
+
+**After Background Phase:**
+- Update Overall Summary with background context
+- Create collapsible dimension sections
+- Begin User Dimension exploration
+
+### Phase 2: Dimensional Exploration
+
+After background context is complete, explore each dimension systematically.
 
 ---
 
@@ -24,19 +58,39 @@ Comprehensive problem discovery framework that explores problems from multiple d
 
 ### USER DIMENSION
 
-**Purpose:** Understand who experiences this problem
+**Purpose:** Understand WHO the users are (NOT the tool, NOT the context)
 
-**Explore until you can:**
-- Describe user confidently
-- Map key variations
-- Identify constraints
-- Explain context
+**Focus ONLY on user characteristics:**
+- Who are they? (roles, titles, personas)
+- What is their expertise level?
+- What is their domain knowledge?
+- How do they think and make decisions?
+- What are their capabilities and limitations?
+- Are there different user types or segments?
+
+**Do NOT explore in User Dimension:**
+- ❌ The tool they're using
+- ❌ The current process or workflow
+- ❌ The context of use
+- ❌ Technical constraints
+- ❌ Business requirements
+
+**Those topics belong in:**
+- Problem Dimension (current process, pain points)
+- Context Dimension (where/when/how they work)
+- Constraints Dimension (technical/business limitations)
 
 **Research approach:**
-- Start broad: Who interacts with this?
-- Go specific: What's their context?
-- Map variations: How do they differ?
-- Identify edge cases: Who else might use this?
+- Start broad: Who are the people?
+- Go specific: What defines them as users?
+- Map variations: How do different user types differ?
+- Identify characteristics: What matters about them for this design?
+
+**Explore until you can:**
+- Describe user types confidently
+- Map key user characteristics
+- Identify user capabilities and knowledge levels
+- Explain what makes users different from each other
 
 ---
 
@@ -78,6 +132,19 @@ Comprehensive problem discovery framework that explores problems from multiple d
 
 ## Research Techniques
 
+### Background Context Collection
+
+**Before any dimensional exploration:**
+- Ask all 5 Background Questions (BG.1 through BG.5)
+- Document responses in Overall Summary section
+- Establish shared understanding of the problem space
+- Identify any upfront requirements or constraints
+
+**This is mandatory setup, not optional:**
+- Cannot skip to User Dimension without background
+- Background questions come first in EVERY research engagement
+- After background, create dimension sections and begin User Dimension
+
 ### Adaptive Questioning
 
 - Generate questions specific to THIS problem
@@ -109,7 +176,13 @@ Comprehensive problem discovery framework that explores problems from multiple d
 
 ## Completion Criteria
 
+**Background Phase complete when:**
+- ✅ All 5 Background Questions answered
+- ✅ Overall Summary populated with context
+- ✅ Ready to begin dimensional exploration
+
 **Discovery complete when:**
+- ✅ Background context established
 - ✅ All dimensions thoroughly explored
 - ✅ No major gaps remain
 - ✅ Can write clear problem statement
@@ -118,11 +191,50 @@ Comprehensive problem discovery framework that explores problems from multiple d
 
 ---
 
+## Token Management and Continuation
+
+**Monitor Token Usage:**
+- Check token counter after every response
+- Document displays current usage in header
+- Warning at 90% capacity (171K of 190K tokens)
+- Force stop at 95% capacity (180K of 190K tokens)
+
+**At 90% Threshold - Issue Warning:**
+```
+⚠️ TOKEN CAPACITY WARNING (90%)
+
+Approaching conversation limits. To continue research:
+1. Start new chat
+2. Say "Continue Design Help - [Project Name]"
+3. Share the live research document
+
+The document has everything - no other materials needed.
+
+Ready to proceed with next question, or continue later?
+```
+
+**At 95% Threshold - Force Stop:**
+```
+🛑 TOKEN LIMIT REACHED (95%)
+
+Must continue in new chat. Your research document contains all 
+progress. Start new chat with "Continue Design Help - [Project Name]" 
+and share the document.
+```
+
+**Why No Handoff Summary Needed:**
+The live research document IS the handoff. It contains:
+- Overall Summary with background context
+- All completed dimensions with summaries
+- Current dimension with all Q&A
+- All insights and action items
+- Clear indication of last question and next step
+
+**Document = Complete Continuity**
+
+---
+
 ## Notes
 
 - Follow general research standards from Design Helper.md
-- Use option system (1-3 + Save/Gap/Suggest) after each question
-- Update Live Research Document after each Q&A
-- Document must be created BEFORE first question
-- Track token usage throughout research
 - Use ⊕ additional questions when patterns emerge
