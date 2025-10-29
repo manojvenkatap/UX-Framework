@@ -1,410 +1,733 @@
 # UX Research - Problem Finder
 
-## Research Method Overview
-
-Comprehensive problem discovery framework that explores problems from multiple dimensions to build deep understanding before moving to solutions.
-
-**Research Goal:** Thoroughly understand the problem space, users, context, and constraints to inform effective design decisions.
+**Research Method:** Problem Finder | **Version:** 3.0 | **Framework Type:** 5-Dimensional Analysis
 
 ---
 
-## Document Structure
+## 📖 RESEARCH METHOD OVERVIEW
 
-**Single-Page Scrollable Document with Collapsible Sections:**
+**Problem Finder** is an intelligent, adaptive approach to understanding complex problems through structured dimensional analysis. This method dynamically generates questions based on the problem context, ensuring comprehensive problem identification before solution development.
 
-**Always Visible (Top of Document):**
-1. **Overall Summary** - High-level project context and current status
-2. **Key Insights** - Cross-dimensional patterns and discoveries
-3. **Action Items** - Tasks identified during research
+**Key Principle:** The framework works intelligently - analyzing the problem statement and generating contextually relevant questions rather than following a rigid questionnaire.
 
-**Collapsible Sections (Below):**
-4. **Background Context** (expanded when active, collapsed when complete/not started)
-5. **User Dimension** (expanded when active, collapsed when complete/not started)
-6. **Problem Dimension** (expanded when active, collapsed when complete/not started)
-7. **Context Dimension** (expanded when active, collapsed when complete/not started)
-8. **Impact Dimension** (expanded when active, collapsed when complete/not started)
-9. **Constraints Dimension** (expanded when active, collapsed when complete/not started)
+**When to Use:**
+- Understanding complex, multi-faceted problems
+- Beginning new projects with unclear requirements
+- Stakeholder alignment on problem definition
+- Before solution ideation or design
 
-**Status Indicators:**
-- 🟡 IN PROGRESS - Currently exploring (expanded)
-- ✅ COMPLETE - Dimension finished (collapsed, can expand)
-- ⚪ NOT STARTED - Not yet begun (collapsed, grayed)
+**Research Structure:**
+1. **Background Context Phase** - MANDATORY first phase
+   - Understand the problem space
+   - Establish foundational context
+   - Eliminate knowledge gaps
+2. **Dimensional Exploration** - Deep analysis across 5 dimensions:
+   - User Dimension
+   - Problem Dimension
+   - Context Dimension
+   - Constraints Dimension
+   - Solutions Dimension
 
-**NO TABS** - Everything on one scrollable page
+**Output:** Comprehensive problem analysis document with actionable insights
 
 ---
 
-## Research Phases
+## 🧠 INTELLIGENT QUESTIONING METHODOLOGY
+
+**How This Framework Works:**
+
+1. **Analyze Problem Statement:** Parse the user's initial problem description to identify key themes, domains, and gaps
+2. **Generate Contextual Questions:** Create questions specific to the problem domain and context
+3. **Listen and Adapt:** Analyze responses to identify follow-up areas and adjust subsequent questions
+4. **Explore Systematically:** Ensure all 5 dimensions are covered while remaining relevant to the specific problem
+
+**Question Generation Principles:**
+- Questions must be **specific to the problem domain**, not generic
+- Ask what you don't know based on previous answers
+- Dig deeper when answers reveal interesting patterns or gaps
+- Adapt questioning based on user expertise level
+- Focus on uncovering actionable insights, not checking boxes
+
+---
+
+## 🎯 RESEARCH EXECUTION WORKFLOW
 
 ### Phase 1: Background Context (MANDATORY FIRST)
 
-**Purpose:** Establish essential context before any dimension exploration
+**Before ANY dimensional exploration, complete all 5 background questions:**
 
-**CRITICAL:** These questions MUST be asked FIRST for every research engagement, regardless of research type. This is not part of Problem Dimension - this is setup that happens BEFORE dimensional exploration begins.
+This phase establishes foundational understanding and eliminates knowledge gaps before deep research begins.
 
-**Required Background Questions (in this order):**
-
-**BG.1 - Problem Statement**
-
-**Question:** What is the problem you are trying to solve?
-
-**Why I'm asking:** Need clear understanding of the core challenge
-
-**What I'm listening for:** Specific problem description, user impact, business need
-
----
-
-**BG.2 - Problem Type**
-
-**Question:** Is this an existing problem you're trying to fix, or a new feature/capability you're building?
-
-**Why I'm asking:** Existing problems require understanding current pain points; new features require understanding goals and opportunities
-
-**What I'm listening for:** Whether there's a current broken state or if this is net-new functionality
-
----
-
-**BG.3 - Existing Designs (if applicable)**
-
-**Question:** [If existing problem] Are there any current designs or implementations for this? If yes, can you share them?
-
-**Why I'm asking:** Existing designs provide crucial context about what's been tried and why it's not working
-
-**What I'm listening for:** Links to designs, explanations of current approach, known issues
-
----
-
-**BG.4 - Requirements**
-
-**Question:** Do you have any specific requirements or constraints for solving this problem?
-
-**Why I'm asking:** Need to understand guardrails, must-haves, and deal-breakers upfront
-
-**What I'm listening for:** Technical constraints, business requirements, accessibility needs, timeline constraints
-
----
-
-**BG.5 - Additional Context**
-
-**Question:** Is there anything else important I should know before we start the research?
-
-**Why I'm asking:** Catch any critical context that wasn't covered
-
-**What I'm listening for:** Stakeholder concerns, political context, related initiatives, assumptions
-
----
-
-**After Background Phase:**
-- Update Overall Summary with background context
-- Create collapsible dimension sections
-- Begin User Dimension exploration
-
----
+**Questions BG.1 through BG.5 MUST be completed first.**
 
 ### Phase 2: Dimensional Exploration
 
-After background context is complete, explore each dimension systematically.
+**After background context is complete, explore each dimension systematically.**
+
+Each dimension has its own focus and questions. Complete one dimension before moving to the next.
 
 ---
 
-## Mandatory Exploration Dimensions
+## 📄 DOCUMENT STRUCTURE - SINGLE PAGE SCROLLABLE
 
-### USER DIMENSION
+**Create ONE artifact with all research in a single scrollable page:**
 
-**Purpose:** Understand WHO the users are (NOT the tool, NOT the context)
+```markdown
+# [Project Name] - Problem Finder Research
 
-**Focus ONLY on user characteristics:**
-- Who are they? (roles, titles, personas)
-- What is their expertise level?
-- What is their domain knowledge?
-- How do they think and make decisions?
-- What are their capabilities and limitations?
-- Are there different user types or segments?
-
-**Do NOT explore in User Dimension:**
-- ❌ The tool they're using
-- ❌ The current process or workflow
-- ❌ The context of use
-- ❌ Technical constraints
-- ❌ Business requirements
-
-**Those topics belong in:**
-- Problem Dimension (current process, pain points)
-- Context Dimension (where/when/how they work)
-- Constraints Dimension (technical/business limitations)
-
-**Research approach:**
-- Start broad: Who are the people?
-- Go specific: What defines them as users?
-- Map variations: How do different user types differ?
-- Identify characteristics: What matters about them for this design?
-
-**Explore until you can:**
-- Describe user types confidently
-- Map key user characteristics
-- Identify user capabilities and knowledge levels
-- Explain what makes users different from each other
+**Project:** [Project Name]
+**Research Method:** Problem Finder
+**Date Started:** [Date]
+**Status:** [In Progress/Paused/Complete]
+**Token Usage:** [Current/190K]
 
 ---
 
-### PROBLEM DIMENSION
+## 📊 DASHBOARD
 
-**Purpose:** Define what's wrong and why
+### Research Progress
+- **Current Phase:** [Phase Name]
+- **Questions Completed:** [X/Total]
+- **Dimensions Explored:** [List]
+- **Overall Progress:** [X%]
 
-**Explore until you can:**
-- State problem clearly
-- Explain root cause
-- Quantify impact
-- Define scope
+### Key Insights
+1. [Insight 1]
+2. [Insight 2]
+3. [Insight 3]
 
-**Research approach:**
-- Define: What specific problem exists?
-- Dig: Why does this problem exist? (5 whys)
-- Assess: How big is this problem?
-- Scope: What's in/out of bounds?
+### Action Items
+- [ ] [Action 1]
+- [ ] [Action 2]
+- [ ] [Action 3]
+
+### Problem Definition (Emerging)
+[As research progresses, this section captures the evolving problem statement]
 
 ---
 
-### CONTEXT DIMENSION
+## 🎯 PHASE 1: BACKGROUND CONTEXT (MANDATORY)
 
-**Purpose:** Understand the environment and constraints
+**Goal:** Establish foundational understanding before dimensional exploration
 
-**Explore until you can:**
-- Describe current workflow
+**How It Works:**
+Before exploring dimensions, Claude analyzes the problem statement and generates 3-7 contextual questions to understand:
+- Project scope and objectives
+- Current situation and challenges
+- Target audience and stakeholders
+- Success criteria and goals
+- Timeline, budget, and constraints
+
+**Framework Guidance for Question Generation:**
+
+**Analyze the problem statement to identify what's missing, then ask:**
+
+1. **Project/Initiative Context** - If not clear from problem statement:
+   - What is this project/initiative?
+   - What prompted this work?
+   - What are you trying to achieve?
+
+2. **Current State Assessment** - If situation is unclear:
+   - How do things work today?
+   - What's broken or missing?
+   - What workarounds exist?
+   - What metrics describe the current situation?
+
+3. **Audience/Stakeholder Identification** - If users are not specified:
+   - Who is impacted?
+   - Who are the primary users?
+   - What stakeholder groups are involved?
+   - Are there conflicting needs between groups?
+
+4. **Success Definition** - If goals are vague:
+   - What does success look like?
+   - What metrics matter?
+   - How will you measure improvement?
+   - What outcomes are most important?
+
+5. **Constraints Discovery** - If limitations are unstated:
+   - What's your timeline?
+   - What's your budget?
+   - What technical constraints exist?
+   - What regulatory/compliance requirements apply?
+   - What resources are available?
+
+6. **Domain-Specific Context** - Based on problem domain:
+   - For accessibility: WCAG level, user disabilities, assistive tech
+   - For enterprise software: Scale, integrations, deployment model
+   - For consumer products: Market position, competition, user acquisition
+   - Adapt to the specific domain of the problem
+
+**Questioning Approach:**
+- Start with what the user said - acknowledge their problem statement
+- Ask only what you don't already know
+- Generate 3-7 contextual questions (not a fixed 5)
+- Tailor questions to the specific problem domain
+- Use their language and terminology
+- Be conversational, not interrogative
+
+**After Background Phase:**
+Synthesize the context in 2-3 sentences before moving to dimensional exploration.
+
+---
+
+## 🔍 PHASE 2: DIMENSIONAL EXPLORATION
+
+**Goal:** Deep analysis across 5 dimensions to fully understand the problem space
+
+**Explore each dimension systematically. Complete one dimension before moving to the next.**
+
+---
+
+<details>
+<summary><strong>USER DIMENSION</strong> ⏳</summary>
+
+**Dimension Goal:** Understand who the users are, their behaviors, needs, and mental models.
+
+**What to Explore:**
+This dimension uncovers the human side of the problem - who experiences it, how they behave, what they need, and how they think.
+
+**Core Areas for Investigation:**
+- **User Identity:** Who are the users? Roles, characteristics, segments, diversity
+- **User Behaviors:** What do they do? Current tasks, workflows, patterns, workarounds
+- **User Needs:** What do they need? Goals, motivations, pain points, desires
+- **Mental Models:** How do they think? Expectations, assumptions, conceptual frameworks
+- **User Context:** Where/when/how do they work? Environment, constraints, tools
+
+**Question Generation Guidance:**
+
+Analyze background context to identify gaps in user understanding, then generate questions that:
+
+**For User Identity:**
+- Segment users if multiple types exist
+- Understand experience levels, technical proficiency
+- Identify differences between user groups
+- Examples: "You mentioned customer service reps - are there different types with different needs?" or "How technically skilled are these users typically?"
+
+**For User Behaviors:**
+- Map current workflows and tasks
+- Identify workarounds (reveals pain points)
+- Understand frequency and patterns
+- Examples: "Walk me through how a user currently handles [specific task]" or "What workarounds have users created?"
+
+**For User Needs & Pain Points:**
+- Uncover frustrations and complaints
+- Identify unmet needs
+- Understand what matters most
+- Examples: "What do users complain about most?" or "What are they trying to accomplish that they can't do today?"
+
+**For Mental Models:**
+- Discover user expectations
+- Identify metaphors users use
+- Understand how they conceptualize the domain
+- Examples: "How do users expect this to work?" or "What metaphors do users use to describe the system?"
+
+**For User Context:**
+- Understand work environment
+- Identify contextual constraints
+- Map tools and ecosystem
+- Examples: "What's the environment like when they're using this?" or "What other tools do they use alongside this?"
+
+**Adaptive Questioning:**
+- Ask what you don't know based on background context
+- Follow interesting threads from previous answers
+- Adjust depth based on problem complexity
+- Generate 3-8 questions per dimension (not fixed)
+- Stop when you have comprehensive user understanding
+
+**Dimension Complete When:**
+- You can describe distinct user segments
+- You understand current behaviors and workarounds
+- You've identified key pain points and needs
+- You understand user mental models and expectations
+- You have actionable user insights
+
+</details>
+
+---
+
+<details>
+<summary><strong>PROBLEM DIMENSION</strong> ⏳</summary>
+
+**Dimension Goal:** Identify and understand the core problems, their symptoms, and root causes.
+
+**What to Explore:**
+This dimension digs into the problem itself - what it is, why it exists, how it manifests, and how it's evolving.
+
+**Core Areas for Investigation:**
+- **Problem Definition:** What is the core problem? Clear, specific statement
+- **Problem Symptoms:** How does it manifest? Observable evidence and impacts
+- **Root Causes:** Why does it exist? Underlying factors and triggers
+- **Problem Scope:** How big is it? Scale, severity, affected populations
+- **Problem Evolution:** How is it changing? Trends, trajectory, history
+
+**Question Generation Guidance:**
+
+Analyze background context and user dimension findings to identify problem gaps, then generate questions that:
+
+**For Problem Definition:**
+- Clarify the core issue
+- Distinguish symptoms from root problem
+- Validate problem statement
+- Examples: "If you had to describe the core problem in one sentence, what would it be?" or "Is this primarily a [X] problem or a [Y] problem?"
+
+**For Problem Symptoms:**
+- Identify observable manifestations
+- Quantify impact where possible
+- Map where/when problems occur
+- Examples: "How does this problem show up in daily operations?" or "What are the visible signs that this problem exists?"
+
+**For Root Causes:**
+- Uncover underlying factors
+- Challenge assumptions about causes
+- Identify system vs. surface issues
+- Examples: "Why do you think this problem exists?" or "If we could trace this back, what would we find at the root?"
+
+**For Problem Scope & Severity:**
+- Quantify impact (time, money, satisfaction)
+- Identify all affected parties
+- Prioritize problem aspects
+- Examples: "How much time/money is lost because of this?" or "Who feels this pain most acutely?"
+
+**For Problem Evolution:**
+- Understand historical trajectory
+- Identify trend direction
+- Discover triggering events
+- Examples: "Is this getting worse, better, or staying the same?" or "When did this problem first emerge?"
+
+**Adaptive Questioning:**
+- Build on insights from User Dimension
+- Connect user pain points to problem symptoms
+- Verify problem assumptions with probing questions
+- Generate 3-8 questions based on problem complexity
+- Dig deeper when answers reveal interesting root causes
+
+**Dimension Complete When:**
+- You have a clear, specific problem statement
+- You understand symptoms and their impact
+- You've identified potential root causes
+- You know the scope and severity
+- You understand problem history and trajectory
+- You have distinguished between symptoms and core issues
+
+</details>
+
+---
+
+<details>
+<summary><strong>CONTEXT DIMENSION</strong> ⏳</summary>
+
+**Dimension Goal:** Understand the environment, ecosystem, and factors surrounding the problem.
+
+**What to Explore:**
+This dimension examines the world around the problem - organizational, technical, market, and cultural factors that shape both problem and solutions.
+
+**Core Areas for Investigation:**
+- **Organizational Context:** Company structure, culture, processes, politics
+- **Technical Environment:** Systems, platforms, tools, technical debt, architecture
+- **Market/Industry Context:** Competition, standards, regulations, trends
+- **Stakeholder Ecosystem:** Who's involved, their interests, power dynamics
+- **Historical Context:** Past attempts, organizational memory, legacy decisions
+
+**Question Generation Guidance:**
+
+Analyze previous dimensions to identify contextual gaps, then generate questions that:
+
+**For Organizational Context:**
+- Understand decision-making processes
+- Identify cultural factors
+- Map team structures and ownership
+- Examples: "How do decisions get made in your organization?" or "What's the culture around [relevant topic]?"
+
+**For Technical Environment:**
+- Map existing systems and integrations
 - Identify technical constraints
-- Understand business requirements
-- Map stakeholder needs
+- Understand technical capabilities
+- Examples: "What systems would this need to integrate with?" or "What's your current technical stack?"
 
-**Research approach:**
-- Current state: How do things work today?
-- Constraints: What limits our solutions?
-- Dependencies: What else is affected?
-- Success criteria: How will we measure improvement?
+**For Market/Industry Context:**
+- Identify competitive landscape
+- Understand industry standards
+- Discover regulatory requirements
+- Examples: "How do competitors handle this?" or "What industry standards apply here?"
+
+**For Stakeholder Ecosystem:**
+- Map all stakeholder groups
+- Understand interests and conflicts
+- Identify decision makers and influencers
+- Examples: "Who else has a stake in this beyond end users?" or "Whose approval do you need?"
+
+**For Historical Context:**
+- Learn from past attempts
+- Understand why previous solutions failed
+- Identify organizational memory
+- Examples: "What's been tried before?" or "Why didn't previous approaches work?"
+
+**Adaptive Questioning:**
+- Connect context to user and problem insights
+- Focus on contextual factors that constrain or enable solutions
+- Explore areas that will impact implementation
+- Generate 3-8 questions based on complexity
+- Prioritize context that affects feasibility
+
+**Dimension Complete When:**
+- You understand organizational dynamics
+- You know the technical landscape
+- You're aware of industry/market factors
+- You've mapped stakeholder interests
+- You know relevant history and lessons learned
+- You can identify contextual risks and opportunities
+
+</details>
 
 ---
 
-### IMPACT DIMENSION
+<details>
+<summary><strong>CONSTRAINTS DIMENSION</strong> ⏳</summary>
 
-**Purpose:** Assess what's at stake
+**Dimension Goal:** Identify all limitations, restrictions, and boundaries that shape possible solutions.
 
-**Explore until you can:**
-- Quantify user impact
-- Understand business implications
-- Identify risks of not solving
-- Prioritize importance
+**What to Explore:**
+This dimension maps the solution space boundaries - what's non-negotiable, what's limited, and what must be worked within.
 
-**Research approach:**
-- User impact: How does this affect users?
-- Business impact: What are the business consequences?
-- Opportunity cost: What happens if we don't solve this?
-- Priority: How important is this relative to other work?
+**Core Areas for Investigation:**
+- **Technical Constraints:** Platform limits, performance requirements, compatibility needs
+- **Resource Constraints:** Budget, timeline, team capacity, skills available
+- **Business Constraints:** Revenue requirements, business model, strategic alignment
+- **Legal/Regulatory Constraints:** Compliance, accessibility, privacy, industry regulations
+- **User/Design Constraints:** User needs, brand guidelines, design system requirements
 
----
+**Question Generation Guidance:**
 
-### CONSTRAINTS DIMENSION
+Analyze all previous dimensions to identify unstated constraints, then generate questions that:
 
-**Purpose:** Understand what limits our solutions
+**For Technical Constraints:**
+- Identify platform/browser requirements
+- Understand performance needs
+- Map integration requirements
+- Discover security/scalability needs
+- Examples: "What platforms must this support?" or "Are there performance requirements?"
 
-**Explore until you can:**
-- List technical constraints
-- Identify resource limitations
+**For Resource Constraints:**
+- Clarify budget limitations
 - Understand timeline pressures
-- Map stakeholder requirements
+- Identify team capacity issues
+- Discover skill gaps
+- Examples: "What's your timeline for this?" or "What's the team size working on this?"
 
-**Research approach:**
-- Technical: What are the tech limitations?
-- Resources: What resources are available?
-- Timeline: When does this need to be done?
-- Requirements: What are the non-negotiables?
+**For Business Constraints:**
+- Understand business model requirements
+- Identify revenue/cost constraints
+- Map strategic priorities
+- Discover competitive pressures
+- Examples: "Are there business model constraints?" or "What strategic goals must this serve?"
 
----
+**For Legal/Regulatory Constraints:**
+- Identify compliance requirements (GDPR, CCPA, etc.)
+- Understand accessibility mandates (WCAG, ADA)
+- Discover industry regulations
+- Map audit/security requirements
+- Examples: "What compliance requirements apply?" or "What accessibility level are you targeting?"
 
-## Research Techniques
+**For User/Design Constraints:**
+- Understand design system requirements
+- Identify brand guidelines
+- Discover user expectations
+- Map interaction pattern needs
+- Examples: "Do you have a design system to work within?" or "What brand requirements exist?"
 
-### Background Context Collection
+**Adaptive Questioning:**
+- Focus on constraints not yet mentioned
+- Prioritize constraints that eliminate solution paths
+- Ask about domain-specific constraints
+- Generate 3-8 questions based on gaps
+- Don't ask about constraints already clearly stated
 
-**Before any dimensional exploration:**
-- Ask all 5 Background Questions (BG.1 through BG.5)
-- Document responses in Overall Summary section
-- Establish shared understanding of the problem space
-- Identify any upfront requirements or constraints
+**Dimension Complete When:**
+- You've identified all major constraint categories
+- You understand which constraints are hard vs. soft
+- You know what's absolutely non-negotiable
+- You can define the solution space boundaries
+- You've uncovered hidden constraints
+- You can assess solution feasibility
 
-**This is mandatory setup, not optional:**
-- Cannot skip to User Dimension without background
-- Background questions come first in EVERY research engagement
-- After background, create dimension sections and begin User Dimension
-
----
-
-### Adaptive Questioning
-
-- Generate questions specific to THIS problem
-- Build on previous answers intelligently
-- Follow complexity when detected
-- Probe gaps and assumptions
-- Connect insights across dimensions
-
----
-
-### One Question at a Time
-
-- Ask single focused question
-- Wait for answer
-- Process answer deeply
-- Determine next question based on answer
-- Show your thinking process
+</details>
 
 ---
 
-### Sufficiency Checking
+<details>
+<summary><strong>SOLUTIONS DIMENSION</strong> ⏳</summary>
 
-**After exploring each dimension, assess:**
-- ✅ Do I have complete understanding?
-- ✅ Are there gaps or ambiguities?
-- ✅ Have I explored variations?
-- ✅ Can I articulate this clearly?
+**Dimension Goal:** Understand what has been tried, what ideas exist, and what solution expectations are.
 
-**If ALL criteria met:** → Move to next dimension  
-**If gaps remain:** → Continue exploring this dimension
+**What to Explore:**
+This dimension examines the solution landscape - past attempts, current thinking, requirements, and concerns about future solutions.
+
+**Core Areas for Investigation:**
+- **Historical Solutions:** What's been tried, what worked/failed, lessons learned
+- **Current Ideas:** Existing hypotheses, stakeholder assumptions, proposed approaches
+- **Solution Requirements:** Must-haves, deal-breakers, minimum viable criteria
+- **Success Criteria:** How to measure solution success, key metrics and outcomes
+- **Solution Risks:** Concerns, fears, potential failure modes, unintended consequences
+
+**Question Generation Guidance:**
+
+Analyze all previous dimensions to understand solution expectations, then generate questions that:
+
+**For Historical Solutions:**
+- Learn what's been attempted
+- Understand why approaches failed
+- Identify what worked partially
+- Extract lessons learned
+- Examples: "What solutions have you tried before?" or "Why didn't previous approaches work?"
+
+**For Current Ideas:**
+- Surface existing hypotheses
+- Understand stakeholder assumptions
+- Gauge commitment to ideas
+- Challenge or validate thinking
+- Examples: "Do you have solution ideas already?" or "What approaches are stakeholders leaning toward?"
+
+**For Solution Requirements:**
+- Identify must-have features
+- Discover deal-breakers
+- Understand minimum viability
+- Map non-negotiable needs
+- Examples: "What would make a solution completely unacceptable?" or "What are the must-haves?"
+
+**For Success Criteria:**
+- Define measurable outcomes
+- Identify key metrics
+- Understand qualitative goals
+- Clarify validation approach
+- Examples: "How will you measure success?" or "What would prove this solution worked?"
+
+**For Solution Risks:**
+- Uncover stakeholder concerns
+- Identify potential failure modes
+- Understand adoption risks
+- Discover hidden fears
+- Examples: "What concerns you most about solving this?" or "What could go wrong with a solution?"
+
+**Adaptive Questioning:**
+- Connect to constraints and context
+- Validate or challenge assumptions
+- Focus on actionable solution insights
+- Generate 3-8 questions based on gaps
+- Balance optimism with risk awareness
+
+**Dimension Complete When:**
+- You understand what's been tried and learned
+- You know current solution thinking and biases
+- You've identified solution requirements
+- You have clear success criteria
+- You understand risks and concerns
+- You can guide solution direction with confidence
+
+</details>
 
 ---
 
-## Token Management and Continuation
+## 📝 RESEARCH SYNTHESIS
+
+### Problem Definition
+[Clear, concise problem statement based on all research]
+
+### Key Findings Across Dimensions
+
+**User Insights:**
+- [Key finding 1]
+- [Key finding 2]
+- [Key finding 3]
+
+**Problem Insights:**
+- [Key finding 1]
+- [Key finding 2]
+- [Key finding 3]
+
+**Context Insights:**
+- [Key finding 1]
+- [Key finding 2]
+- [Key finding 3]
+
+**Constraint Insights:**
+- [Key finding 1]
+- [Key finding 2]
+- [Key finding 3]
+
+**Solution Insights:**
+- [Key finding 1]
+- [Key finding 2]
+- [Key finding 3]
+
+### Patterns & Themes
+1. [Pattern 1]
+2. [Pattern 2]
+3. [Pattern 3]
+
+### Recommendations
+1. [Recommendation 1]
+2. [Recommendation 2]
+3. [Recommendation 3]
+
+### Next Steps
+- [ ] [Action item 1]
+- [ ] [Action item 2]
+- [ ] [Action item 3]
+```
+
+---
+
+## 💬 CONVERSATION FLOW & INTELLIGENT EXECUTION
+
+**Research Flow:**
+
+1. **Acknowledge Problem Statement**
+   - Start by acknowledging what the user has shared
+   - Identify what you already know from their initial description
+   - Generate background questions only for what's unclear or missing
+
+2. **Complete Background Context Phase**
+   - Generate 3-7 contextual questions based on gaps in understanding
+   - Ask questions tailored to the specific problem domain
+   - Synthesize background in 2-3 sentences before moving forward
+
+3. **Dimensional Exploration**
+   - Work through dimensions systematically (User → Problem → Context → Constraints → Solutions)
+   - Generate 3-8 questions per dimension based on complexity and gaps
+   - Each question should be contextually relevant to the problem
+   - Adapt questioning based on previous answers
+
+4. **Create Final Synthesis**
+   - Synthesize findings across all dimensions
+   - Provide actionable recommendations
+   - Identify clear next steps
+
+**After Each Answer:**
+- Acknowledge response briefly and naturally
+- Extract and document insights immediately in the live document
+- Update the document with answer + insights
+- Analyze what you've learned to inform next question
+- Present next question using the format: Question → Why → What
+- Continue flowing naturally through research
+
+**Between Dimensions:**
+- Provide brief summary (2-3 sentences) of dimension findings
+- Preview next dimension focus area
+- Confirm user is ready to continue
+
+**Intelligent Questioning Principles:**
+- **Context-Aware:** Every question should be specific to the problem domain
+- **Gap-Driven:** Ask only what you don't know from previous answers
+- **Adaptive:** Adjust depth and focus based on responses
+- **Natural:** Conversational flow, not interrogation
+- **Purposeful:** Each question should serve the research goal
+- **Efficient:** Variable question count (3-8) based on complexity, not fixed
+
+**Examples of Intelligent Adaptation:**
+
+**Bad (Generic):**
+"Who are the users?"
+
+**Good (Context-Aware):**
+"You mentioned customer service reps using this tool - are there different rep types with different technical skills or needs?"
+
+**Bad (Asking what you know):**
+"What's your timeline?" [when user already said "Q4 deadline"]
+
+**Good (Building on context):**
+"With your Q4 deadline, which aspects of this need to ship first versus what could be phased?"
+
+**Bad (Fixed questioning):**
+Asking all 5 pre-defined questions regardless of answers
+
+**Good (Adaptive):**
+Stopping at 4 questions when you have comprehensive understanding, or asking 8 when the problem is complex
+
+---
+
+## 📊 TOKEN MANAGEMENT AND CONTINUATION
 
 **Monitor Token Usage:**
-- Check token counter after every response
-- Document displays current usage in header
-- Warning at 90% capacity (171K of 190K tokens)
-- Force stop at 95% capacity (180K of 190K tokens)
+- Display in header: `**Token Usage:** [Current/190K]`
+- Check after every response
+- Calculate percentage used
 
----
+**At 90% Threshold (171K tokens):**
 
-### At 90% Threshold - Issue Warning
-
+Pause and display:
 ```
-⚠️ TOKEN CAPACITY WARNING (90%)
+⚠️ APPROACHING TOKEN LIMIT (90%)
+═══════════════════════════════════════════════════
 
-Approaching conversation limits. To continue research:
-1. Start new chat
+We've completed substantial research but are reaching conversation 
+capacity. To maintain research quality, let's continue in a new chat.
+
+WHAT I'LL DO NOW:
+1. Create comprehensive handoff summary
+2. Include all findings, insights, and context
+3. Provide clear continuation instructions
+
+WHAT YOU'LL DO:
+1. Start a new chat
 2. Say "Continue Design Help - [Project Name]"
-3. Share the live research document
+3. Share this chat URL and research artifacts
 
-The document has everything - no other materials needed.
+Ready to create continuation summary? (yes/no)
+```
 
-Ready to proceed with next question, or continue later?
+**At 95% Threshold:**
+- Forcefully stop research
+- Create handoff summary immediately
+- Explain necessity to continue in new chat
+
+**Handoff Summary:** Use template from Design Helper.md
+
+---
+
+## 🎯 QUESTION FORMAT
+
+**ALWAYS present in this exact order:**
+
+```
+### [Dimension].[Number]: [Question Title]
+
+**Question:** [The actual question]
+
+**Why I'm asking:** [Purpose and reasoning]
+
+**What I'm listening for:** [Expected insights]
 ```
 
 ---
 
-### At 95% Threshold - Force Stop
+## ⚡ KEY PRINCIPLES
 
-```
-🛑 TOKEN LIMIT REACHED (95%)
+1. **Intelligent, Not Scripted:** Generate questions dynamically based on problem context, not from a fixed list
+2. **Background First:** Always establish foundational context before dimensional exploration
+3. **Context-Driven:** Every question should be specific to the problem domain and situation
+4. **Gap-Focused:** Ask only what you don't know from previous answers
+5. **Adaptive Depth:** Question count (3-8) varies based on complexity, not fixed formulas
+6. **Single Page:** All research in one scrollable document with collapsible sections
+7. **One Dimension at a Time:** Complete each dimension fully before moving to next
+8. **No Tabs:** Single page with collapsible sections only
+9. **Document Insights Immediately:** After each answer, extract and document learnings
+10. **Token Awareness:** Monitor constantly, pause at 90%, force stop at 95%
+11. **Continuation Ready:** Use documents as context source, not memory
+12. **Natural Flow:** Conversational and purposeful, not interrogative
+13. **Question Format:** Always Question → Why I'm asking → What I'm listening for
 
-Must continue in new chat. Your research document contains all 
-progress. Start new chat with "Continue Design Help - [Project Name]" 
-and share the document.
-```
-
----
-
-### Why No Handoff Summary Needed
-
-The live research document IS the handoff. It contains:
-- Overall Summary with background context
-- All completed dimensions with summaries
-- Current dimension with all Q&A
-- All insights and action items
-- Clear indication of last question and next step
-
-**Document = Complete Continuity**
-
----
-
-## Completion Criteria
-
-**Background Phase complete when:**
-- ✅ All 5 Background Questions answered
-- ✅ Overall Summary populated with context
-- ✅ Ready to begin dimensional exploration
-
-**Discovery complete when:**
-- ✅ Background context established
-- ✅ All dimensions thoroughly explored
-- ✅ No major gaps remain
-- ✅ Can write clear problem statement
-- ✅ Cross-dimension patterns identified
-- ✅ Sufficient foundation for design phase
+**Framework Intelligence:**
+This is not a questionnaire - it's an intelligent research framework that:
+- Analyzes the problem statement deeply
+- Identifies knowledge gaps
+- Generates relevant, contextual questions
+- Adapts based on responses
+- Knows when to dig deeper or move on
+- Maintains systematic coverage across dimensions
 
 ---
 
-## Live Document Guidelines
-
-### Tab Content Organization
-
-**Each dimension section MUST contain (in this order):**
-
-1. **Section Header** (collapsible, always visible)
-   - Status indicator (🟡 / ✅ / ⚪)
-   - Expand/collapse control
-
-2. **Research Goal** (visible when expanded)
-   - Blue info box explaining dimension purpose
-
-3. **Dimension Summary** (only when dimension complete, appears FIRST)
-   - Format: "📋 [DIMENSION NAME] SUMMARY"
-   - Blue summary box with border
-   - Synthesized findings from all questions
-   - Positioned BEFORE questions section
-
-4. **Questions & Answers** (all Q&A for THIS dimension only)
-   - Chronological order
-   - Each in bordered box
-   - Question number clearly visible
-
----
-
-### Question Presentation Format
-
-**All questions MUST follow this structure:**
-
-```
-Q[Number] [⊕ if additional]
-
-**Question:**
-[The actual question text]
-
-**Why I'm asking:**
-[Purpose and reasoning]
-
-**What I'm listening for:**
-[Expected insights]
-```
-
-**CRITICAL:**
-- Question comes FIRST, always
-- Never reverse the order
-- Apply to every single question
-- Consistent across all dimensions
-
----
-
-### Summary Placement Rule
-
-**When a dimension is complete:**
-- Generate dimension summary immediately
-- Place summary at TOP of dimension section
-- Position: After Research Goal, BEFORE all questions
-- Update Overall Summary with key finding
-- Collapse the dimension section
-- Mark as ✅ COMPLETE
-
----
-
-## Notes
-
-- Follow general research standards from Design Helper.md
-- Use ⊕ additional questions when patterns emerge
-- Update live document after each Q&A
-- Document must be self-contained
-- Track token usage throughout research
+**Version:** 3.0  
+**Last Updated:** 2025-10-29  
+**Framework:** Problem Finder - 5-Dimensional Analysis
