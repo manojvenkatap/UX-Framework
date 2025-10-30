@@ -1789,18 +1789,45 @@ To resume seamlessly, please provide:
 Please share these details.
 ```
 
-**Step 2: Load Previous Session**
+**Step 2: Load Previous Session - Zero Information Loss**
 
-Use `conversation_search` on provided chat URL to extract:
-- Problem statement
-- Completed dimensions
-- Current dimension progress
-- Last question asked and answer
-- All action items
-- Behavioral patterns found
-- Assumptions challenged
-- Trigger points identified
-- Question count per dimension
+**Request context (priority order):**
+```
+To ensure complete context:
+
+1. Handoff Summary (if you have it) - Most complete
+2. Previous Chat URL - I'll extract systematically  
+3. Your notes - Fill any gaps
+
+What do you have?
+```
+
+**Extraction Method:**
+
+Use `conversation_search` + `recent_chats` on chat URL to extract:
+- Problem statement (exact wording)
+- All dimension findings (each dimension)
+- Last question + answer (exact quotes)
+- All action items with priorities
+- Behavioral patterns, assumptions, triggers
+- Question counts per dimension
+- Exact stopping point
+
+**Then display summary (Step 4 format) and ADD:**
+```
+⚠️ COMPLETENESS CHECK
+
+I've extracted context systematically. Please verify:
+
+✅ Complete - Continue research
+⚠️ Missing details - Let me add [describe what]
+
+Your verification?
+```
+
+**If "Missing details":** User provides → Update context → Verify again → Only proceed when ✅
+
+**After ✅ Complete:** Clear memory → Continue to Step 4
 
 **Step 3: Generate Intelligent Summary**
 
@@ -1983,6 +2010,9 @@ Let me continue with the next question...
 39. ⚠️ **Context is everything**
 40. ⚠️ **Research is systematic inquiry**
 41. ⚠️ **Make it collaborative**
+42. ⚠️ **Auto-clear memory during continuation** - After loading previous research, clear memory to prevent conflicts
+43. ⚠️ **Systematic extraction required** - Use conversation_search + recent_chats, dimension-by-dimension
+44. ⚠️ **User must verify completeness** - Never proceed without user confirmation "✅ Complete"
 
 ---
 
@@ -2020,6 +2050,7 @@ Research session succeeds when:
 
 **Continuation Experience:**
 - ✅ Previous chat loaded successfully
+- ✅ User verified context completeness before proceeding  ⬅️ ADD THIS
 - ✅ 3.5-line summary generated (strict adherence)
 - ✅ All action items displayed before resuming
 - ✅ User offered action items update opportunity
