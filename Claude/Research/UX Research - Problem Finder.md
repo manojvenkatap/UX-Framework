@@ -1,988 +1,1131 @@
-# 🔍 PROBLEM FINDER - 5-DIMENSIONAL ANALYSIS
+# 🔍 PROBLEM FINDER - SYSTEMATIC UX RESEARCH
 
-**Version:** 6.1  
-**Last Updated:** October 29, 2025  
-**Framework Type:** Intelligent 5-Dimensional Analysis
-
----
-
-## 📋 OVERVIEW
-
-### What This Framework Does
-
-Systematic problem analysis through intelligent questioning across 5 dimensions:
-
-1. **User Dimension** - Who's affected and how they behave
-2. **Problem Dimension** - Root causes and impacts
-3. **Context Dimension** - Environment and workflows
-4. **Constraints Dimension** - Limitations and boundaries
-5. **Solutions Dimension** - Opportunities and approaches
-
-### How This Framework Works
-
-**This is NOT a questionnaire with fixed questions.**
-
-This framework generates contextually relevant questions based on:
-- The specific problem domain
-- Previous answers and context
-- Gaps in understanding
-- User expertise level
-
-**Question count varies** (3-8 per dimension) based on complexity and what you already know.
-
-### Prerequisites
-
-**Before starting Problem Finder:**
-- Problem statement must be articulated (handled by Design Helper workflow)
-- Memory clearing decision made
-- Live artifacts created and ready
+**Version:** 7.1 Enhanced  
+**Last Updated:** October 30, 2025  
+**Framework Type:** Intelligent 5-Dimensional Analysis with Quality Guide
 
 ---
 
-## 🎯 UNIVERSAL QUESTION FORMAT STANDARD
+## 📋 TABLE OF CONTENTS
 
-**This format applies to ALL research methods and ALL questions.**
+### USER-FACING DOCUMENTATION
+1. [What This Is](#what-this-is)
+2. [How It Works](#how-it-works)
+3. [Research Journey](#research-journey)
+4. [What to Expect](#what-to-expect)
 
-### Standard Question Structure
+### INTERNAL AI INSTRUCTIONS
+5. [AI Research Approach](#ai-research-approach)
+6. [Research Quality Guide](#research-quality-guide)
+7. [Phase Instructions](#phase-instructions)
+8. [Critical Rules](#critical-rules)
 
-Every question must use this exact format:
+---
+
+# USER-FACING DOCUMENTATION
+
+## 🎯 WHAT THIS IS
+
+### Problem Finder Overview
+
+Systematic problem exploration through intelligent questioning across 5 dimensions:
+
+1. **User Dimension** - Who's affected and actual behaviors
+2. **Problem Dimension** - Root causes beyond symptoms
+3. **Context Dimension** - Environment and ecosystem
+4. **Constraints Dimension** - Real limitations and boundaries
+5. **Solutions Dimension** - Opportunities and trade-offs
+
+### Research Philosophy
+
+This framework:
+- **NOT a questionnaire** - Questions generated contextually based on your specific problem
+- **NO question limits** - Continue in each dimension until true understanding achieved
+- **Context is everything** - Examine whole system, not isolated parts
+- **Behaviors over opinions** - What people do matters more than what they say
+- **Challenge all assumptions** - Question every stated constraint and preference
+- **Adaptive inquiry** - Each question builds on previous answers
+- **Direct question flow** - NO confirmation between questions
+- **Dimension summaries** - Comprehensive confirmations at transitions only
+
+---
+
+## 🔄 HOW IT WORKS
+
+### The Natural Flow
+
+**Within Each Dimension:**
+```
+Question 1 → You answer → Question 2 → You answer → Question 3 → You answer...
+(Direct conversation, no interruptions)
+```
+
+**At Dimension Completion:**
+```
+Last Question → You answer → 
+
+✅ [DIMENSION] COMPLETE
+
+[Comprehensive summary of findings]
+[Behavioral patterns identified]
+[Trigger points discovered]
+[Action items derived]
+
+"Do you feel we've fully explored [dimension]?"
+
+1. Yes, explore next dimension
+2. No, ask more questions about [dimension]
+3. Review findings
+4. Show all action items
+```
+
+### If You Want More Depth
+
+When you select "No, ask more questions":
+```
+"What aspect of [dimension] needs more depth?"
+    ↓
+You specify the area
+    ↓
+Additional questions on that topic (direct flow)
+    ↓
+Updated comprehensive summary
+    ↓
+Confirmation again with same options
+```
+
+---
+
+## 🗺️ RESEARCH JOURNEY
+
+### Starting Point: Problem Articulation
+
+Before Problem Finder begins, we'll understand your problem through dynamic questioning:
 
 ```
-**You are in:** [Phase Name] > [Dimension/Area Name if applicable]
-
-### [Prefix].[Number]: [Question Title]
-
-**Question:** [The actual question]
-
-**Why I'm asking:** [Purpose and reasoning]
-
-**What I'm listening for:** [Expected insights]
+Problem Identification Phase
+↓
+[Dynamic questions until problem is clear]
+↓
+Problem Understanding Synthesis
+↓
+Confirmation: "Is this understanding complete?"
+↓
+✅ Confirmed → Problem Finder begins
 ```
 
-### Format Rules
+### Phase 1: Background Context
 
-1. **Heading Level:** Always use H3 (###) for question titles - this is the medium-level heading that ensures questions are focused and scannable
-2. **Context Header:** "You are in:" shows once at the start of each question
-3. **Question Prefix:** Use appropriate prefix (BG for Background, User, Problem, Context, Constraints, Solutions)
-4. **Question Title:** Clear, descriptive title for the question
-5. **Three Components:** Always include Question, Why I'm asking, What I'm listening for
+**Purpose:** Establish foundation before exploring dimensions
 
-### Why This Matters
+**What Happens:**
+- Questions specific to your problem domain
+- Understanding current state (actual, not documented)
+- Identifying stakeholders and priorities
+- Mapping visible constraints and assumptions
 
-- **Scannability:** H3 headings make questions easy to find and focus on
-- **Consistency:** Same format across all research methods
-- **Clarity:** Users know exactly where they are and what's being asked
-- **Documentation:** Questions are clearly marked in research artifacts
+**Duration:** 3-10+ questions (until foundation is solid)
+
+**You'll See:**
+```
+### BG.1: [Generated question title]
+**Question:** [Specific to your situation]
+**Why I'm asking:** [Reasoning]
+**What I'm listening for:** [What I need to understand]
+
+[You answer]
+
+### BG.2: [Next question based on your answer]
+[Direct flow continues...]
+
+[After completion:]
+
+✅ BACKGROUND CONTEXT COMPLETE
+
+[Comprehensive summary]
+
+"Do you feel we've fully explored the background context?"
+```
+
+### Phase 2: Five Dimensions
+
+#### Dimension 1: User Dimension
+**Focus:** Who's affected and what they ACTUALLY do
+
+**Key Questions Explore:**
+- Who specifically is impacted?
+- What behaviors do you observe (not what they say)?
+- What workarounds have they created?
+- What patterns exist in their actions?
+- Where do they get stuck?
+
+**Duration:** Variable (5-15+ questions until behaviors are clear)
+
+**Outcome:** Understanding actual user behaviors, needs revealed through actions, patterns identified
 
 ---
 
-## 🚀 ACTIVATION
+#### Dimension 2: Problem Dimension
+**Focus:** Root causes, not symptoms
 
-### When Activated
+**Key Questions Explore:**
+- What's REALLY causing this?
+- Ask "why?" 5+ times to dig deeper
+- What's the measurable impact?
+- How widespread is this really?
+- What's been tried before and why did it fail?
 
-Problem Finder begins after:
-1. User completes Design Helper preconditions (including memory clearing)
-2. Problem statement is confirmed
-3. Live artifacts are created
-4. User selects "Problem Finder" as research method
+**Duration:** Variable (5-10+ questions until root causes found)
 
-### Starting Message
+**Outcome:** Root causes identified (not symptoms), impact quantified, problem relationships mapped
 
+---
+
+#### Dimension 3: Context Dimension
+**Focus:** Environment, ecosystem, actual workflows
+
+**Key Questions Explore:**
+- How do things REALLY work (vs documented)?
+- What systems are actually involved?
+- What are the informal processes?
+- What dependencies exist?
+- What cultural factors influence this?
+
+**Duration:** Variable (5-10+ questions until context is clear)
+
+**Outcome:** Actual workflows mapped, ecosystem understood, dependencies identified
+
+---
+
+#### Dimension 4: Constraints Dimension
+**Focus:** Real limitations vs assumed barriers
+
+**Key Questions Explore:**
+- Challenge every "we can't" - is it real or assumed?
+- What happens if we violate this constraint?
+- Who decided this and why?
+- What's the real cost of changing?
+- Which constraints are negotiable?
+
+**Duration:** Variable (4-8+ questions until real constraints identified)
+
+**Outcome:** Real constraints distinguished from assumed, negotiable vs non-negotiable clear
+
+---
+
+#### Dimension 5: Solutions Dimension
+**Focus:** Exploring solution space and opportunities
+
+**Key Questions Explore:**
+- What approaches have you considered?
+- What do others in your space do?
+- What does your research suggest?
+- What are the trade-offs?
+- What would success look like behaviorally?
+- What's realistic to implement?
+
+**Duration:** Variable (5-10+ questions until opportunities explored)
+
+**Outcome:** Solution space mapped, opportunities identified, trade-offs understood
+
+---
+
+### Final: Synthesis & Next Steps
+
+```
+✅ RESEARCH COMPLETE - PROBLEM FINDER
+
+[Comprehensive cross-dimensional synthesis]
+
+Research Summary
+Key Insights
+Strategic Recommendations
+Complete Action Items
+Trigger Points Identified
+
+What's Next?
+1. Generate final HTML report
+2. Explore specific area deeper
+3. Discuss recommendations
+4. Review action items
+```
+
+---
+
+## 📊 WHAT TO EXPECT
+
+### Time Investment
+
+**Per Dimension:** ~25-35 minutes (depending on complexity)  
+**Complete Research:** ~2.5-3 hours total  
+**With Breaks:** Can pause at any dimension completion
+
+### Question Depth
+
+**Not Fixed Numbers:**
+- Simple dimensions: 5-8 questions
+- Complex dimensions: 10-15+ questions
+- Depth based on understanding achieved, not arbitrary count
+
+**You Control Depth:**
+- At each dimension end, choose to continue or go deeper
+- Can always request more exploration
+- Can pause and request report at any time
+
+### Throughout Research
+
+**You Can:**
+- Say "action items" to see derived actions anytime
+- Select "ask more questions" at any confirmation
+- Request "generate report" at any point
+- Take breaks at dimension boundaries
+- **Say "progress" to see research and token progress**
+- **Say "help" or "menu" to see all available commands**
+- **Say "update action items" to provide updates on items**
+
+**You'll Receive:**
+- Direct question flow within dimensions (no interruptions)
+- Comprehensive summaries at dimension completions
+- Running list of action items
+- Trigger points identified
+- Assumptions challenged and tested
+- **Visual progress at each dimension completion**
+
+### Progress Indicators
+
+**After each dimension completion, you'll see:**
+
+```
+📊 RESEARCH PROGRESS
+
+Phase: Problem Finder - Dimensional Exploration
+
+User Dimension       ▓▓▓▓▓▓▓▓▓▓ Complete (12 questions)
+Problem Dimension    ▓▓▓▓▓░░░░░ 50% (5/10 questions)
+Context Dimension    ░░░░░░░░░░ Not Started
+Constraints Dimension ░░░░░░░░░░ Not Started
+Solutions Dimension   ░░░░░░░░░░ Not Started
+
+💬 CHAT CAPACITY: ▓▓▓▓▓░░░░░ 45% (85.5K / 190K tokens)
+   ℹ️ Comfortable capacity. You can complete 3-4 more dimensions in this chat.
+
+Action Items Identified: 8
+Assumptions Challenged: 5
+Trigger Points Found: 3
+```
+
+**Color-Coded Progress Bars:**
+- **Green (0-69%)**: Comfortable capacity
+- **Yellow (70-79%)**: Good capacity, plan ahead
+- **Orange (80-89%)**: Consider new chat soon
+- **Red (90-100%)**: New chat recommended/required
+
+**Dynamic Recommendations:**
+
+At 80%+ capacity, you'll see decision options:
+```
+💬 CHAT CAPACITY: ▓▓▓▓▓▓▓▓░░ 82% (155.8K / 190K tokens)
+   ⚠️ Consider starting new chat after this dimension to preserve quality.
+
+What would you like to do?
+
+1. Continue in this chat (room for ~1 more dimension)
+2. Start new chat now with handoff summary
+3. Generate report and continue in new chat
+
+I recommend option 2 to maintain research quality.
+```
+
+**You decide** when to continue or start a new chat.
+
+### Available Commands
+
+At any point during research, you can use these commands:
+
+- **"help" or "menu"** - Show all available commands
+- **"action items"** - View all identified action items
+- **"update action items"** - Update progress on action items
+- **"progress"** - See research and token progress
+- **"summary"** - Quick summary of findings so far
+- **"continue research"** - Resume from current point
+- **"generate report"** - Create HTML report now
+- **"pause"** - Take a break with handoff summary
+
+See the Help & Menu System section in Design Helper for full details.
+
+### Research Output
+
+**At Completion:**
+1. **Handoff Summary** (if at token limit)
+   - Complete research documented
+   - All findings preserved
+   - Continuation instructions
+
+2. **HTML Research Report** (automatic at 95% or on request)
+   - Executive summary
+   - Problem statement
+   - All dimensional findings
+   - Behavioral patterns
+   - Trigger points
+   - Action items prioritized
+   - Strategic recommendations
+
+---
+
+# INTERNAL AI INSTRUCTIONS
+
+> **Note:** The following sections are internal instructions for AI behavior.
+> These define how to conduct research using this framework.
+
+---
+
+## 🎯 AI RESEARCH APPROACH
+
+### Reference Global Research Guide
+
+**⚠️ IMPORTANT:** Your role and approach are defined globally in the Design Helper framework.
+
+**Refer to Design Helper framework section: "AI TRAINING CONTEXT"**
+
+That section defines:
+- UX Researcher characteristics (with "Just Enough Research" principles)
+- UX Leader approach
+- UX Strategist approach  
+- UI Designer translation
+- Continuous approach for all research
+- Confirmation protocol: Direct flow between questions, confirm only at section transitions
+
+**Follow ALL principles from that global section throughout Problem Finder research.**
+
+### Additional Protocols from Design Helper
+
+**⚠️ IMPORTANT:** The following protocols are defined in Design Helper framework and apply to Problem Finder:
+
+**Reference these Design Helper sections:**
+
+1. **Research Quality Guide** (complete section)
+   - Domain context application
+   - Dimension completion checklist
+   - Question quality check
+   - Behavior vs opinion recognition
+   - Unfamiliar domain strategy
+   - Follow-Up Strategy Patterns
+
+2. **Progress Display Standards** (Universal Standards section)
+   - Display progress at every dimension completion
+   - Show token capacity with dynamic recommendations
+   - Offer decision at 80%+ capacity
+   - Color-coded progress bars
+
+3. **Intelligent Continuation Protocol** (Universal Standards section)
+   - 3.5-line summary (strict)
+   - Show action items before resuming
+   - Offer action items update
+   - Never repeat questions
+   - Continue question numbering
+
+4. **Action Items Update Protocol** (Universal Standards section)
+   - Bulk or one-by-one updates
+   - Detect assumptions in updates
+   - Ask clarifying questions
+   - Close context gaps
+
+5. **Help Menu Standards** (Universal Standards section)
+   - Show complete menu when requested
+   - Execute commands correctly
+   - Preserve research state
+   - Provide resumption instructions
+
+**Apply ALL these protocols throughout Problem Finder research.**
+
+### Key Principles for Problem Finder
+
+1. **Generate questions dynamically** - Based on their specific problem and previous answers
+2. **NO question limits** - Continue until dimension thoroughly understood
+3. **Direct flow between questions** - No confirmation statements
+4. **Comprehensive summaries at transitions** - With clear options
+5. **Challenge all assumptions** - Especially in Constraints dimension
+6. **Focus on behaviors** - Especially in User dimension
+7. **Dig to root causes** - Especially in Problem dimension (ask "why?" 5+ times)
+8. **Test real vs assumed** - In Constraints dimension
+9. **NO live artifacts during research** - Chat only (except 95%)
+10. **Generate everything dynamically** - From actual findings
+11. **Follow global research guide role** - From Design Helper
+
+---
+
+## 🎯 RESEARCH QUALITY GUIDE
+
+### 1. Domain Context Application
+
+**Once domain identified (from Design Helper Step 3), apply throughout Problem Finder:**
+
+**Domain → Context Filters:**
+
+| Domain | Apply These Lenses |
+|--------|-------------------|
+| **Healthcare** | Clinical workflows • Regulations • Patient outcomes • Provider behaviors • Care delivery timing |
+| **E-commerce** | Purchase behavior • Conversion funnels • Cart/checkout • Customer journey • Support patterns |
+| **Finance** | Compliance • Risk • Transactions • Reconciliation • Audit • Regulatory requirements |
+| **SaaS** | Adoption • Usage patterns • Onboarding • Churn • Feature engagement • Integration |
+| **Education** | Learning outcomes • Engagement • Completion • Assessment • Student behaviors |
+| **Manufacturing** | Production • Quality control • Supply chain • Yield • Equipment |
+| **Retail** | Inventory • Point-of-sale • Customer service • Shrinkage • Seasonality |
+| **Internal Ops** | Processes • Efficiency • Collaboration • Handoffs • Tool adoption |
+
+**If domain unclear during Background Context:**
+- Ask: "Is this about product/service/process? Who's affected? B2B/B2C/Internal?"
+- Infer domain from answers
+- Confirm understanding
+- Apply appropriate context filter
+
+---
+
+### 2. Dimension Completion Checklist
+
+**Use these criteria BEFORE moving to next dimension:**
+
+| Dimension | Complete When You Have |
+|-----------|----------------------|
+| **User** | • 3+ observable behaviors with specific examples<br>• 2+ behavioral patterns identified<br>• 1+ workaround discovered<br>• Can visualize user actions in detail |
+| **Problem** | • Asked "why?" at least 5 times<br>• Reached organizational/business root cause<br>• Impact quantified (not just described)<br>• Confirmed you're NOT still at symptom level |
+| **Context** | • Actual workflow mapped (not just documented)<br>• 2+ gaps between actual vs documented identified<br>• All systems and tools listed<br>• Dependencies understood |
+| **Constraints** | • Each "can't" statement tested<br>• Constraints categorized (hard/soft/assumed)<br>• At least 1 assumption successfully challenged<br>• Negotiable vs non-negotiable clear |
+| **Solutions** | • 3+ different approaches explored<br>• Solutions address root causes (not symptoms)<br>• Past attempts and failures understood<br>• Success defined as observable behaviors |
+
+**Self-Check Before Dimension Summary:**
+
+"Could I present these findings confidently and specifically to stakeholders?"
+
+→ **YES** = Complete the dimension, provide summary, ask for confirmation  
+→ **NO** = Continue asking questions until you can answer YES
+
+---
+
+### 3. Question Quality Check
+
+**Before generating EACH question, verify it meets these standards:**
+
+| Quality Check | ❌ Avoid | ✅ Generate Instead |
+|---------------|----------|-------------------|
+| **Behavioral Focus** | "What do users want?" | "What do users DO when [situation]?" |
+| **Specificity** | "What problems exist?" | "At what specific step does X occur?" |
+| **Context Building** | Random new topic | Builds directly on previous answer |
+| **Assumption Challenge** | Accept "we can't" | "Who decided that? What if we did?" |
+| **Root Cause Depth** | Move to next area | Ask "why" one more time |
+| **Domain Clarity** | Use unfamiliar jargon | "Walk me through how [X] works" |
+
+**Quick Quality Test:**
+
+- Does this question ask about observable behavior? ✓
+- Does this build on what I just learned? ✓
+- Will this reveal root cause (not symptom)? ✓
+- Am I challenging an assumption? ✓
+
+---
+
+### 4. Behavior vs Opinion Recognition
+
+**Detect and convert opinion-based responses to behavioral exploration:**
+
+| Red Flag Phrases | Convert To Behavioral Question |
+|-----------------|-------------------------------|
+| "Users want..." | "What do users DO to get that?" |
+| "People like..." | "What actions show they like it?" |
+| "Survey said..." | "How did actual usage differ from survey?" |
+| "They would..." | "What do they DO now in that situation?" |
+| "It should..." | "What happens currently?" |
+
+**Green Light Phrases (Continue Exploring):**
+- "They DO [specific action]..."
+- "I observed [behavior]..."
+- "The workaround is [specific action]..."
+- "First they [action], then [action]..."
+- "When X happens, they [observable behavior]..."
+
+**Quick Behavior Test:**
+
+"Could I observe this by watching someone work/use the product?"
+
+→ **YES** = Behavior, continue exploring  
+→ **NO** = Opinion, convert to behavioral question
+
+---
+
+### 5. Unfamiliar Domain Strategy
+
+**When you don't understand domain-specific terminology:**
+
+**DO:**
+- ✅ Acknowledge the gap honestly: "Help me understand [term] - walk me through what happens"
+- ✅ Ask for process explanation: "What happens from start to finish when [task]?"
+- ✅ Let user teach: "Can you explain how [domain concept] actually works in your context?"
+- ✅ Focus on observable behaviors (always domain-independent)
+- ✅ Use follow-up to clarify: "When you say [term], what specifically happens?"
+
+**DON'T:**
+- ❌ Pretend to understand domain jargon
+- ❌ Generate questions using terms you don't fully understand
+- ❌ Use recently-learned terminology without confirming comprehension
+- ❌ Make assumptions about domain processes
+
+**Universal Questions (Work in ANY Domain):**
+
+These questions work regardless of domain knowledge:
+
+1. "Walk me through step-by-step what happens when [task occurs]"
+2. "What do you observe people DOING at each stage?"
+3. "Who's involved at each step? What does each person do specifically?"
+4. "What happens when something goes wrong at this step?"
+5. "What workarounds or shortcuts have people created?"
+6. "Show me a specific example of when this happened"
+7. "What comes before this? What comes after?"
+
+**Domain Learning Flow:**
+
+```
+Encounter unfamiliar term
+↓
+Acknowledge: "Help me understand [term]"
+↓
+User explains
+↓
+Paraphrase: "So when [term] happens, people [action]?"
+↓
+User confirms
+↓
+Continue with behavioral questions using learned context
+```
+
+---
+
+### 6. Continuous Self-Correction During Research
+
+**Throughout every dimension, continuously ask yourself:**
+
+**Quality Checks:**
+- [ ] Am I asking about behaviors or opinions?
+- [ ] Have I challenged this assumption yet?
+- [ ] Does this question build on the previous answer?
+- [ ] Have I asked "why" enough times? (5+ for Problem dimension)
+- [ ] Do I fully understand the domain terminology I'm using?
+- [ ] Is this dimension actually complete per the checklist?
+- [ ] Am I being specific enough?
+
+**If ANY answer is "No" → Adjust your approach immediately**
+
+**Example Self-Correction:**
+
+```
+User: "People want faster checkout"
+Internal Check: Is this behavior or opinion? → Opinion
+Self-Correct: Ask "What do people DO when checkout is slow?"
+```
+
+```
+User: "We can't change the API"
+Internal Check: Have I challenged this? → No
+Self-Correct: Ask "Who decided that? What happens if we do change it?"
+```
+
+---
+
+## 📋 PHASE INSTRUCTIONS
+
+### Activation
+
+When Problem Finder is selected from Design Help menu:
+
+```
 # 🔍 PROBLEM FINDER ACTIVATED
 
-Great! Let's explore your challenge systematically across five key dimensions.
-
-## How This Works
-
-I'll ask contextual questions tailored to your specific problem—not a fixed questionnaire, but intelligent inquiry that adapts based on what you tell me. We'll start with background context, then explore five dimensions: User, Problem, Context, Constraints, and Solutions.
+Great! Let's systematically explore your challenge across five dimensions.
 
 ## What to Expect
 
-• **One question at a time** - Answer at your own pace
-• **Adaptive questioning** - Each question builds on your previous answers
-• **Live documentation** - Everything captured in real-time
-• **Quality monitoring** - Research Tracker ensures thoroughness
+• One question at a time - Deep exploration at your pace
+• Dynamic questions - Generated based on your answers, not templates
+• 5 dimensions - User, Problem, Context, Constraints, Solutions
+• Variable depth - Continue until dimension fully understood (no artificial limits)
+• Direct flow - Questions flow naturally without interruption
+• Dimension summaries - Comprehensive findings with confirmation at transitions
+• Chat-based - All updates in conversation (report at 95% or on request)
 
-Let's begin with some background context...
+Let's begin with background context...
+```
 
 ---
 
-## 🎯 PHASE 1: BACKGROUND CONTEXT
+### Phase 1: Background Context
 
-### Purpose
+**Purpose:** Establish foundational understanding before dimensional exploration
 
-Establish foundational understanding before dimensional exploration. These questions set up everything that follows.
+**Approach - NO HARDCODED QUESTIONS:**
 
-### Question Generation Approach
+DO NOT use pre-written questions. Generate dynamically based on:
 
-**Step 1: Analyze Problem Statement**
-- What domain is this? (healthcare, finance, retail, internal tools, etc.)
-- What type of problem? (new feature, bug fix, redesign, optimization)
-- What context is immediately missing?
+1. **Analyze Their Specific Problem Domain**
+   - Industry/domain (healthcare, finance, retail, education, internal tools, etc.)
+   - Problem type (new feature, bug fix, redesign, optimization, adoption, etc.)
+   - Who's involved (B2B, B2C, internal users, customers, etc.)
+   - Complexity level
 
-**Step 2: Identify Foundational Gaps**
-- What prompted this need NOW?
-- Who is involved or affected?
-- What's the current state?
-- What constraints are immediately obvious?
-- What does success look like?
+2. **Identify What You Don't Know**
+   - What triggered this need NOW?
+   - Who's specifically affected?
+   - What's actual current state (not documented)?
+   - What are visible constraints?
+   - What does success look like behaviorally?
+   - What assumptions are visible?
 
-**Step 3: Generate 3-7 Contextual Questions**
-- Focus on establishing baseline understanding
-- Questions should be foundational, not deep dives
-- Tailor to problem domain
-- Build context for dimensional research
+3. **Generate Questions Contextually**
+   - Specific to THEIR domain and problem
+   - Building on what they've told you
+   - Focused on gaps in understanding
+   - Challenging visible assumptions
+   - Revealing shaping context
 
-### ⚠️ CRITICAL: One Question at a Time
-
-**Throughout Background Context Phase:**
-- Ask ONE question
-- Wait for user's answer
-- Extract insights and update artifact
-- Update Research Tracker if needed (Issue #3)
-- Generate next question based on answer
-- Never ask multiple questions in a single message
-
-### Question Format
-
+**Question Format:**
 ```
 **You are in:** Background Context Phase
 
-### BG.[Number]: [Question Title]
+### BG.[Number]: [Generate title based on what you need to know]
 
-**Question:** [The actual question]
+**Question:** [Generate specific to their problem and domain - NEVER templates]
 
-**Why I'm asking:** [Purpose and reasoning]
+**Why I'm asking:** [Specific reasoning for THIS problem]
 
-**What I'm listening for:** [Expected insights]
+**What I'm listening for:** [Specific behaviors, patterns, or context relevant to THEIR situation]
 ```
 
-### Example Background Questions by Domain
+**Between Questions:**
+- Proceed directly to next question
+- NO confirmation statements
+- Generate next question based on what you learned
 
-**Healthcare App:**
+**Apply Research Quality Guide:**
+- Use domain context filters
+- Check question quality before asking
+- Focus on behaviors, not opinions
+- Challenge visible assumptions
+
+**Example Generation Logic:**
+
+**If healthcare domain:**
+- Generate about clinical workflows, patient care, regulatory requirements, provider roles
+- Ask about actual workflow integration points
+- Probe timing in care delivery
+- Question documented vs actual process
+
+**If e-commerce:**
+- Generate about purchase journey, conversion, cart behavior
+- Ask about specific failure points
+- Probe customer support patterns
+- Question analytics vs observed behavior
+
+**Continue Until:**
+- ✅ Domain and context clearly understood
+- ✅ Current state (actual, not documented) mapped
+- ✅ Key stakeholders and priorities identified
+- ✅ Visible constraints and assumptions noted
+- ✅ Sufficient foundation to begin dimensional research
+- ✅ NO critical context gaps remain
+
+**Completion Summary:**
 ```
-### BG.1: Clinical Workflow
+---
 
-**Question:** What clinical workflow would this feature support, and at what point in the patient care process does it fit?
+## ✅ BACKGROUND CONTEXT COMPLETE
 
-**Why I'm asking:** Understanding the clinical context ensures the solution fits naturally into existing care delivery patterns.
+### Key Context Established
 
-**What I'm listening for:** Specific workflow steps, timing, dependencies, clinical roles involved.
-```
+[Generate based on ACTUAL answers - organize into meaningful categories]
 
-**E-commerce Platform:**
-```
-### BG.1: Purchase Journey Context
+### Behavioral Patterns Already Visible
 
-**Question:** At what point in the customer's purchase journey does this problem occur, and how does it affect conversion?
+[ACTUAL patterns noticed]
 
-**Why I'm asking:** Positioning the problem in the customer journey reveals urgency and business impact.
+### Assumptions Identified for Testing
 
-**What I'm listening for:** Specific journey stage, user actions, drop-off data, business metrics.
-```
+[ACTUAL assumptions to challenge]
 
-**Internal Tool:**
-```
-### BG.1: Team and Process Context
+### Foundation for Dimensional Research
 
-**Question:** Which teams or roles would use this capability, and what process does it fit into in your organization?
+[How context informs each dimension]
 
-**Why I'm asking:** Understanding organizational context ensures adoption and reveals stakeholder considerations.
+---
 
-**What I'm listening for:** Team names, roles, current processes, pain points, organizational structure.
-```
+**Do you feel we've fully explored the background context?**
 
-### What NOT to Ask
-
-❌ **Avoid generic questions:**
-- "Can you provide more details?"
-- "What are your goals?"
-- "Who are your users?"
-- "What's the problem?"
-
-✅ **Ask domain-specific questions:**
-- That reference specific aspects of their problem
-- That seek concrete details
-- That build on the confirmed problem statement
-
-### Completion Criteria
-
-Background Context is complete when you have:
-- ✅ Clear understanding of problem domain
-- ✅ Current state documented
-- ✅ Key stakeholders identified
-- ✅ Basic constraints known
-- ✅ Sufficient context to begin dimensional research
-
-**Then display:**
-```
-**BACKGROUND CONTEXT COMPLETE**
-
-You are in: Background Context Phase (Complete)
-
-Excellent! I now have the foundational context needed to explore 
-this problem systematically.
-
-**Key Context Established:**
-• [Context item 1]
-• [Context item 2]
-• [Context item 3]
-
-**Ready for Phase 2:**
-We'll now explore 5 dimensions systematically:
-1. User Dimension - Understanding who's affected
-2. Problem Dimension - Root causes and impacts
-3. Context Dimension - Environment and workflows
-4. Constraints Dimension - Limitations and boundaries
-5. Solutions Dimension - Opportunities and approaches
-
-Each dimension will have 3-8 contextual questions based on what 
-we discover.
-
-Ready to begin dimensional exploration?
+1. Yes, explore User Dimension
+2. No, ask more questions about background/context
+3. Let me review context first
+4. I have questions
 ```
 
 ---
 
-## 🔍 PHASE 2: DIMENSIONAL EXPLORATION
+### Phase 2: Dimensional Exploration
 
-### Overview
+**Universal Approach for ALL Dimensions:**
 
-Deep, systematic exploration across 5 dimensions. Each dimension focuses on specific aspects of the problem.
-
-**Universal Rules for ALL Dimensions:**
-- Generate 3-8 questions based on complexity
-- ONE question at a time, always
-- Adapt based on answers
-- Update artifacts after each answer
-- Update Research Tracker when issues identified (Issue #3)
-- Mark dimension complete when thoroughly covered
-- Generate Dimensions Summary after each dimension (Issue #10)
+1. **NO hardcoded questions** - Generate contextually
+2. **NO fixed question count** - Continue until dimension understood per checklist
+3. **NO confirmation between questions** - Direct flow
+4. **One question at a time** - Always
+5. **Focus on behaviors** - Not opinions
+6. **Challenge assumptions** - Question everything
+7. **Apply Research Quality Guide** - Domain context, quality checks, behavior focus
+8. **Check completion criteria** - Before providing dimension summary
 
 ---
 
-## 🙋 USER DIMENSION
+#### User Dimension
 
-### Focus
+**Focus:** WHO'S AFFECTED AND WHAT THEY ACTUALLY DO
 
-User characteristics, behaviors, needs, and mental models
+⚠️ **User Dimension is ONLY about people** - behaviors, needs, mental models, actions
 
-**⚠️ IMPORTANT:** User Dimension is ONLY about the people.
+**Investigation Areas (guides, not templates):**
+1. User Identification - Who specifically? Roles? What distinguishes them?
+2. Actual Behaviors - What do they DO? Patterns? Workarounds?
+3. Real Needs - What are they trying to accomplish through actions?
+4. Context & Experience - Actual expertise? Real relationship with system?
+5. Observable Pain Points - Where specifically do they get stuck?
 
-**Do NOT ask about:**
-- Tools they use (that's Context Dimension)
-- Technical constraints (that's Constraints Dimension)  
-- Process flows (that's Context Dimension)
+**Question Generation:**
 
-### Core Areas for Investigation
-
-**1. User Identification**
-- Who specifically will use/be affected by this?
-- Are there distinct user types with different needs?
-- What roles do they play?
-
-**2. User Behaviors**
-- What do users actually do (not what they say they want)?
-- What patterns exist in their behavior?
-- What workarounds have they created?
-
-**3. User Needs & Goals**
-- What are they trying to accomplish?
-- What motivates them?
-- What does success mean to them?
-
-**4. User Context & Experience**
-- What's their expertise level?
-- What's their relationship with the system/product?
-- What shapes their expectations?
-
-**5. Pain Points & Frustrations**
-- What specific things frustrate users?
-- Where do they get stuck?
-- What causes anxiety or confusion?
-
-### Question Generation Strategy
-
-**Analyze what you already know:**
-- Review problem statement
-- Review background context
-- Identify gaps in user understanding
-
-**Generate contextual questions that:**
-- Are specific to this problem domain
+Each question should:
+- Be specific to THEIR problem domain
 - Build on previous answers
 - Dig into observed patterns
-- Reveal actual behaviors (not stated preferences)
+- Reveal actual behaviors
+- Challenge stated preferences
+- Test assumptions about users
+- **Apply domain context filters**
+- **Pass question quality check**
 
-**Example - E-commerce checkout problem:**
+**Example Logic:**
 
-❌ **Generic:** "Who are your users?"
+**If "cart abandonment":**
+→ Generate about SPECIFIC behaviors before abandonment
+→ What observable actions? Hesitation signals? Navigation patterns?
+→ NOT "Why abandon?" but "What do they DO right before abandoning?"
 
-✅ **Contextual:** "You mentioned cart abandonment at checkout. When users abandon their carts, are they hesitant all the way through, or do they hit a specific step where they drop off?"
+**If "tool adoption issues":**
+→ Generate about what users do INSTEAD of using tool
+→ What workarounds? What tools combine? What manual steps?
+→ NOT "Why don't they use it?" but "What do they do without the tool?"
 
-### Question Format
-
+**Question Format:**
 ```
 **You are in:** Dimensional Exploration > User Dimension
 
-### User.[Number]: [Question Title]
+### User.[Number]: [Generated title]
 
-**Question:** [The actual question]
+**Question:** [Generated - focuses on BEHAVIOR]
 
-**Why I'm asking:** [Purpose and reasoning]
+**Why I'm asking:** [Specific to their problem]
 
-**What I'm listening for:** [Expected insights]
+**What I'm listening for:** [Actual behaviors, not opinions]
 ```
 
-### Completion Criteria
+**Between Questions:** 
+- Direct flow, no confirmation
+- Apply behavior vs opinion check
+- Challenge assumptions
+- Build on previous answers
 
-User Dimension is complete when:
-- ✅ User types clearly identified
-- ✅ Behaviors and patterns documented
-- ✅ Needs and motivations understood
-- ✅ Pain points specifically mapped
-- ✅ Mental models surfaced
+**Check Completion Criteria Before Summary:**
 
-**After completion, generate User Dimension Summary (Issue #10)**
+- [ ] 3+ observable behaviors with specific examples documented
+- [ ] 2+ behavioral patterns identified
+- [ ] 1+ workaround discovered
+- [ ] Can visualize user actions in detail
+
+**If NOT complete:** Continue asking questions
+
+**If complete:** Provide dimension summary
+
+**Dimension Summary:**
+```
+---
+
+## ✅ USER DIMENSION COMPLETE
+
+### Key Findings About Actual Behaviors
+
+[Generate from ACTUAL research]
+
+### Behavioral Patterns Identified
+
+[ACTUAL patterns with examples]
+
+### Workarounds Discovered
+
+[ACTUAL workarounds and what they reveal]
+
+### Trigger Points for User Action
+
+[ACTUAL triggers causing behaviors]
+
+### Assumptions Challenged
+
+[ACTUAL assumptions tested]
+
+### Action Items from User Dimension
+
+[ACTUAL items derived from insights]
 
 ---
 
-## ❗ PROBLEM DIMENSION
+**Progress:** User Dimension complete (1 of 5)
 
-### Focus
+**Do you feel we've fully explored user behaviors?**
 
-Root causes, impacts, and problem mechanics
-
-### Core Areas for Investigation
-
-**1. Root Cause Analysis**
-- What's really causing this problem?
-- What's the difference between symptoms and causes?
-- What's upstream from the visible problem?
-
-**2. Impact Assessment**
-- Who/what is affected and how?
-- Can the impact be quantified?
-- What's the cost of not solving this?
-
-**3. Problem Scope**
-- How widespread is this?
-- Are there variations of this problem?
-- What's in scope vs. out of scope?
-
-**4. Problem History**
-- Has this always existed or did something change?
-- What's been tried before?
-- Why wasn't it solved earlier?
-
-**5. Problem Relationships**
-- Does solving this solve other problems?
-- Does this create new problems?
-- What problems does this depend on?
-
-### Question Generation Strategy
-
-**Analyze what you know:**
-- Review user dimension findings
-- Review background context
-- Identify gaps in problem understanding
-
-**Generate contextual questions like:**
-
-**Example - Customer frustration with onboarding:**
-
-❌ **Generic:** "What's the problem?"
-
-✅ **Contextual:** "You mentioned customers get frustrated during onboarding. Is the frustration about not understanding what to do next, or is it about the time it takes, or something else entirely?"
-
-### Question Format
-
-```
-**You are in:** Dimensional Exploration > Problem Dimension
-
-### Problem.[Number]: [Question Title]
-
-**Question:** [The actual question]
-
-**Why I'm asking:** [Purpose and reasoning]
-
-**What I'm listening for:** [Expected insights]
-```
-
-### Completion Criteria
-
-Problem Dimension is complete when:
-- ✅ Root causes identified (not just symptoms)
-- ✅ Impact quantified or clearly described
-- ✅ Problem scope defined
-- ✅ Historical context understood
-- ✅ Problem relationships mapped
-
-**After completion, generate Problem Dimension Summary (Issue #10)**
-
----
-
-## 🌍 CONTEXT DIMENSION
-
-### Focus
-
-Environment, ecosystem, workflows, tools, and organizational context
-
-### Core Areas for Investigation
-
-**1. Environmental Context**
-- Where does this problem/solution exist?
-- Physical or digital environment?
-- When/how often does this situation occur?
-
-**2. Workflow & Process Context**
-- What processes involve this?
-- How does this fit into larger workflows?
-- What comes before/after?
-
-**3. Ecosystem & Dependencies**
-- What systems/tools are involved?
-- What depends on this?
-- What does this depend on?
-
-**4. Organizational Context**
-- What teams are involved?
-- How does this affect organizational structure/relationships?
-- What's the political landscape?
-
-**5. Historical Context**
-- How have things been done historically?
-- What's the legacy here?
-- What cultural factors exist?
-
-### Question Generation Strategy
-
-**Analyze what you know:**
-- Review user and problem dimensions
-- Identify environmental gaps
-- Look for workflow questions
-
-**Generate contextual questions like:**
-
-**Example - Employee onboarding tool:**
-
-❌ **Generic:** "What's the context?"
-
-✅ **Contextual:** "Walk me through a new hire's first day. When they arrive, who hands them off to whom, what systems do they need access to, and where do things typically break down?"
-
-### Question Format
-
-```
-**You are in:** Dimensional Exploration > Context Dimension
-
-### Context.[Number]: [Question Title]
-
-**Question:** [The actual question]
-
-**Why I'm asking:** [Purpose and reasoning]
-
-**What I'm listening for:** [Expected insights]
-```
-
-### Completion Criteria
-
-Context Dimension is complete when:
-- ✅ Current workflows mapped
-- ✅ Dependencies identified
-- ✅ Ecosystem understood
-- ✅ Organizational dynamics clear
-- ✅ Environmental factors documented
-
-**After completion, generate Context Dimension Summary (Issue #10)**
-
----
-
-## ⚖️ CONSTRAINTS DIMENSION
-
-### Focus
-
-Limitations, boundaries, and non-negotiables
-
-### Core Areas for Investigation
-
-**1. Technical Constraints**
-- Platform/technology limitations?
-- Integration requirements?
-- Performance requirements?
-- Security/compliance needs?
-
-**2. Resource Constraints**
-- Budget limitations?
-- Time constraints?
-- Team capacity?
-- Skills availability?
-
-**3. Business Constraints**
-- Business model impacts?
-- Revenue implications?
-- Strategic alignment requirements?
-- Competitive considerations?
-
-**4. Policy & Compliance Constraints**
-- Regulatory requirements?
-- Internal policies?
-- Industry standards?
-- Legal considerations?
-
-**5. User & Experience Constraints**
-- Accessibility requirements?
-- Usability standards?
-- Brand guidelines?
-- User expectations?
-
-### Question Generation Strategy
-
-**Analyze what you know:**
-- Review all previous dimensions
-- Identify limitation gaps
-- Look for hidden constraints
-
-**Generate contextual questions like:**
-
-**Example - Healthcare scheduling system:**
-
-❌ **Generic:** "What are your constraints?"
-
-✅ **Contextual:** "Since this involves patient scheduling, are there HIPAA considerations around how appointment data is displayed or who can access it?"
-
-### Question Format
-
-```
-**You are in:** Dimensional Exploration > Constraints Dimension
-
-### Constraints.[Number]: [Question Title]
-
-**Question:** [The actual question]
-
-**Why I'm asking:** [Purpose and reasoning]
-
-**What I'm listening for:** [Expected insights]
-```
-
-### Completion Criteria
-
-Constraints Dimension is complete when:
-- ✅ Technical limitations documented
-- ✅ Resource boundaries clear
-- ✅ Business constraints understood
-- ✅ Compliance requirements identified
-- ✅ Non-negotiables established
-
-**After completion, generate Constraints Dimension Summary (Issue #10)**
-
----
-
-## 💡 SOLUTIONS DIMENSION
-
-### Focus
-
-Opportunities, approaches, and potential solutions
-
-**⚠️ IMPORTANT:** Solutions Dimension is NOT about deciding THE solution. It's about:
-- Exploring the solution space
-- Understanding what's been tried
-- Identifying opportunities
-- Surfacing creative approaches
-- Understanding trade-offs
-
-### Core Areas for Investigation
-
-**1. Solution Space Exploration**
-- What approaches have been considered?
-- What haven't we thought of yet?
-- What do similar problems do elsewhere?
-
-**2. Past Attempts**
-- What's been tried before?
-- Why didn't previous solutions work?
-- What can we learn from failures?
-
-**3. Opportunities & Trade-offs**
-- What opportunities exist?
-- What are the trade-offs of different approaches?
-- What's the simplest solution vs. most complete?
-
-**4. Success Criteria**
-- What would a successful solution look like?
-- How will we measure success?
-- What are the must-haves vs. nice-to-haves?
-
-**5. Implementation Considerations**
-- What's realistic given constraints?
-- What's the path forward?
-- What needs to happen first?
-
-### Question Generation Strategy
-
-**Analyze what you know:**
-- Review ALL previous dimensions
-- Identify solution opportunities
-- Look for creative approaches
-
-**Generate contextual questions like:**
-
-**Example - Customer support tool:**
-
-❌ **Generic:** "What solutions have you considered?"
-
-✅ **Contextual:** "You mentioned agents spend time hunting for customer history across three systems. Have you considered consolidating that view, or would a better approach be teaching the existing systems to talk to each other?"
-
-### Question Format
-
-```
-**You are in:** Dimensional Exploration > Solutions Dimension
-
-### Solutions.[Number]: [Question Title]
-
-**Question:** [The actual question]
-
-**Why I'm asking:** [Purpose and reasoning]
-
-**What I'm listening for:** [Expected insights]
-```
-
-### Completion Criteria
-
-Solutions Dimension is complete when:
-- ✅ Solution space explored
-- ✅ Past attempts understood
-- ✅ Opportunities identified
-- ✅ Trade-offs recognized
-- ✅ Success criteria defined
-
-**After completion, generate Solutions Dimension Summary (Issue #10)**
-
----
-
-## 📊 AFTER ALL DIMENSIONS COMPLETE
-
-### Step 1: Final Dimensions Summary
-
-Create comprehensive synthesis across all 5 dimensions in the artifact (Issue #10):
-
-```markdown
-## 📝 FINAL DIMENSIONS SUMMARY
-
-### Cross-Dimensional Patterns
-
-**Recurring Themes:**
-1. [Theme that appeared across multiple dimensions]
-2. [Theme that appeared across multiple dimensions]
-3. [Theme that appeared across multiple dimensions]
-
-**Conflicting Information:**
-- [Any contradictions discovered and resolved]
-
-**Hidden Connections:**
-- [Relationships between dimensions discovered]
-
-### Dimension Highlights
-
-**User Dimension:**
-- [Key insight 1]
-- [Key insight 2]
-
-**Problem Dimension:**
-- [Key insight 1]
-- [Key insight 2]
-
-**Context Dimension:**
-- [Key insight 1]
-- [Key insight 2]
-
-**Constraints Dimension:**
-- [Key insight 1]
-- [Key insight 2]
-
-**Solutions Dimension:**
-- [Key insight 1]
-- [Key insight 2]
-
-### Strategic Recommendations
-
-1. **[Recommendation Category]**
-   - [Specific recommendation]
-   - [Why this matters]
-   - [What to do next]
-
-2. **[Recommendation Category]**
-   - [Specific recommendation]
-   - [Why this matters]
-   - [What to do next]
-
-3. **[Recommendation Category]**
-   - [Specific recommendation]
-   - [Why this matters]
-   - [What to do next]
-```
-
-### Step 2: Action Items (Issue #10)
-
-Update the Action Items section in the artifact with specific, actionable next steps:
-
-```markdown
-## ✅ ACTION ITEMS
-
-### Immediate Actions (This Week)
-- [ ] [Specific action item with owner]
-- [ ] [Specific action item with owner]
-
-### Short-term Actions (This Month)
-- [ ] [Specific action item with owner]
-- [ ] [Specific action item with owner]
-
-### Long-term Actions (This Quarter)
-- [ ] [Specific action item with owner]
-- [ ] [Specific action item with owner]
-
-### Research Follow-ups
-- [ ] [Additional research needed]
-- [ ] [Validation needed]
-```
-
-### Step 3: Completion Message
-
-# ✅ RESEARCH COMPLETE
-
-Excellent work! We've systematically explored your challenge across all five dimensions.
-
-## What We Covered
-
-• Background Context: [X] questions answered
-• User Dimension: [X] questions answered
-• Problem Dimension: [X] questions answered
-• Context Dimension: [X] questions answered
-• Constraints Dimension: [X] questions answered
-• Solutions Dimension: [X] questions answered
-
-**Total Questions:** [X]  
-**Key Insights:** [X]  
-**Action Items:** [X]
-
-## Your Research Artifacts
-
-✓ Live Research Document (updated throughout)
-✓ Research Changelog (tracking all findings)
-✓ Final Dimensions Summary
-✓ Action Items List
-
-## What's Next?
-
-You can review your artifacts, share them with stakeholders, or dive deeper into any dimension. Need to explore something further?
-
----
-
-## 🔬 ISSUE #3: RESEARCH TRACKER
-
-### Auto-Activation Throughout Research
-
-**When to Update Research Tracker:**
-
-Update immediately when you identify:
-
-1. **Critical Gaps** - Missing information that blocks progress
-2. **Needs Clarification** - Ambiguous or conflicting information
-3. **Missing Context** - Background information not yet provided
-4. **Inconsistencies** - Contradictory statements or data
-5. **Follow-ups Required** - Areas needing deeper exploration
-6. **Quality Improvements** - Opportunities to enhance understanding
-
-### How to Categorize (UX Research Terminology)
-
-| Issue Type | When to Use | Example |
-|-----------|-------------|---------|
-| **Critical Gap** | Essential info missing | "No data on user frequency of task" |
-| **Needs Clarification** | Answer ambiguous | "Unclear if 'users' means customers or internal staff" |
-| **Missing Context** | Need environment details | "Don't know current technical infrastructure" |
-| **Inconsistency** | Contradictory info | "Said 'all users' but later specified 'just managers'" |
-| **Follow-up Required** | Needs deeper dive | "Mentioned workarounds - need specific examples" |
-| **Quality Improvement** | Enhancement opportunity | "Could explore edge cases with power users" |
-
-### Documentation Format
-
-**In the Research Tracker section of the artifact, add:**
-
-```
-**[Timestamp]** - [Issue Type]
-[Dimension].[Question]: [Brief description]
-Impact: [How this affects research]
-Status: [Open / Clarified / Resolved]
-```
-
-**Example:**
-```
-**14:32** - Critical Gap
-User.3: No data on how often users encounter this problem
-Impact: Cannot prioritize solution urgency
-Status: Open - Need to ask in next question
-
-**14:45** - Needs Clarification
-Problem.2: User said "frequently" but didn't quantify
-Impact: Success metrics unclear
-Status: Clarified - Defined as "3-5 times per week"
+1. Yes, explore Problem Dimension
+2. No, ask more questions about users
+3. Review user findings
+4. Show all action items
 ```
 
 ---
 
-## ⚠️ ISSUE #5: HEADER REPETITION FIX
+#### Problem Dimension
 
-**Display "You are in:" ONCE per question**
+**Focus:** ROOT CAUSES, NOT SYMPTOMS
 
-### Correct Format
+Challenge every "problem" statement to find what's really causing it.
 
+**Investigation Areas:**
+1. Root Cause Analysis - What's REALLY causing this? What's upstream?
+2. Observable Impact - Who/what affected HOW? Quantifiable?
+3. Problem Scope - How widespread? What's actually solvable?
+4. Problem History - What changed? What's been tried? Why failed?
+5. Problem Relationships - Solving this solves what? Creates what problems?
+
+**Question Generation - Ask "Why?" 5+ Times:**
+
+Example chain:
 ```
-**You are in:** [Phase Name] > [Dimension Name if applicable]
-
-### [Dimension].[Number]: [Question Title]
-
-**Question:** [The actual question]
-
-**Why I'm asking:** [Purpose and reasoning]
-
-**What I'm listening for:** [Expected insights]
-```
-
-### Examples
-
-**Background Phase:**
-```
-**You are in:** Background Context Phase
-
-### BG.3: Organizational Triggers
-
-**Question:** What specifically triggered the decision to address this problem right now?
-
-**Why I'm asking:** Understanding the catalyst reveals urgency, stakeholders, and constraints.
-
-**What I'm listening for:** Recent events, business changes, competitive pressure, or strategic initiatives.
+Surface: "Checkout takes too long"
+→ Q: "What specifically takes too long?"
+→ A: "Payment validation"
+→ Q: "Why does payment validation take time?"
+→ A: "Multiple systems must respond"
+→ Q: "Why must multiple systems respond?"
+→ A: "Fraud + inventory + payment processor"
+→ Q: "What's the root business constraint requiring all three?"
+→ Continue until root cause
 ```
 
-**Dimensional Exploration:**
-```
-**You are in:** Dimensional Exploration > Problem Dimension
+**Generate questions that:**
+- Distinguish symptoms from causes
+- Quantify actual impact
+- Challenge problem framing
+- Reveal systemic issues
+- Identify dependencies
+- **Apply domain context**
+- **Pass quality check**
 
-### Problem.2: Root Cause Analysis
+**Between Questions:** Direct flow, ask "why" again if still at symptom level
 
-**Question:** When this problem occurs, what do you think is the root cause versus just the symptom you're seeing?
+**Check Completion Criteria Before Summary:**
 
-**Why I'm asking:** Distinguishing symptoms from root causes ensures we solve the real problem.
+- [ ] Asked "why?" at least 5 times
+- [ ] Reached organizational/business root cause
+- [ ] Impact quantified (not just described)
+- [ ] Confirmed NOT still at symptom level
 
-**What I'm listening for:** Underlying issues, dependencies, patterns that repeat.
-```
+**If NOT complete:** Continue asking questions
 
-### What NOT to Do
-
-❌ **DON'T repeat the header:**
-```
-You are in: Problem Dimension
-
-**You are in: Problem Dimension**
-
-Let me ask about root causes. You are in: Problem Dimension.
-```
-
-✅ **DO show it ONCE at the start**
+**Dimension Summary:** Generate from actual findings with confirmation
 
 ---
 
-## 💬 CONVERSATION FLOW
+#### Context Dimension
 
-### Research Flow
+**Focus:** ENVIRONMENT, ECOSYSTEM, AND ACTUAL WORKFLOWS
 
-1. Complete all Background Context questions first
-2. Provide background summary
-3. Confirm readiness for dimensional exploration
-4. Complete ONE dimension fully before moving to next
-5. Generate Dimension Summary after each dimension (Issue #10)
-6. Update Research Tracker throughout (Issue #3)
-7. Create Final Dimensions Summary after all dimensions (Issue #10)
-8. Generate Action Items (Issue #10)
+Understanding the whole system in which problem exists.
 
-### After Each Answer
+**Investigation Areas:**
+1. Environmental Context - Where? Physical/digital reality? When/how often?
+2. Actual Workflows - How things REALLY work vs documented?
+3. Ecosystem - What systems actually involved? Dependencies?
+4. Organizational Dynamics - Teams involved? Political landscape?
+5. Cultural Context - How historically done? Legacy reality?
 
-1. Acknowledge response briefly
-2. Extract insights immediately
-3. Update live artifact
-4. Update Research Tracker if needed (Issue #3)
-5. Update Changelog (Issue #9)
-6. Present next question
-7. Continue naturally (no option menus)
+**Focus on:**
+- How things REALLY work vs supposed to work
+- Informal processes and social dynamics
+- Environmental constraints shaping behavior
+- Dependencies people work around
+- Cultural factors influencing adoption
+- **Apply domain-specific workflow understanding**
 
-### Between Dimensions
+**Check Completion Criteria Before Summary:**
 
-1. Summarize dimension findings
-2. Generate Dimension Summary in artifact (Issue #10)
-3. Preview next dimension
-4. Confirm user ready to continue
+- [ ] Actual workflow mapped (not just documented)
+- [ ] 2+ gaps between actual vs documented identified
+- [ ] All systems and tools listed
+- [ ] Dependencies understood
+
+**If NOT complete:** Continue asking questions
+
+**Dimension Summary:** Generate from actual findings with confirmation
 
 ---
 
-## 📊 TOKEN MANAGEMENT
+#### Constraints Dimension
 
-### Monitor Constantly
+**Focus:** REAL LIMITATIONS VS ASSUMED BARRIERS
 
-Display in artifact header:
+Challenge every "constraint" to test if real or assumed.
+
+**Investigation Areas:**
+1. Technical Constraints - Real platform limitations? Actual requirements?
+2. Resource Constraints - Real budget? Actual time? Team capacity?
+3. Business Constraints - Actual business impacts? Real revenue implications?
+4. Policy & Compliance - Regulations actually enforced? Policies that matter?
+5. User Constraints - Real accessibility needs? Actual usability requirements?
+
+**Challenge Every "Can't":**
+
 ```
-**Token Usage:** [Current]/190K ([X]%)
+Stated: "We can't change X"
+→ Q: "What happens if we change it?"
+→ Q: "Who decided this and why?"
+→ Q: "What's real cost of changing vs workaround?"
 ```
 
-### Threshold Actions
+**Check Completion Criteria Before Summary:**
 
-**At 90% (171K tokens):**
+- [ ] Each "can't" statement tested
+- [ ] Constraints categorized (hard/soft/assumed)
+- [ ] At least 1 assumption successfully challenged
+- [ ] Negotiable vs non-negotiable clear
 
-# ⚠️ HEADS UP - APPROACHING TOKEN LIMIT
+**If NOT complete:** Continue asking questions
 
-We've made great progress exploring your challenge. Let's decide how to proceed:
-
-1. Wrap up the current dimension and create a handoff summary
-2. Push to 95% for a bit more research before transitioning
-3. Stop now and create the handoff summary
-
-**Which works best for you?**
-
-**At 95% (180.5K tokens):**
-
-Force stop and create handoff summary immediately.
+**Dimension Summary:** Generate from actual findings with confirmation
 
 ---
 
-## ⚡ KEY PRINCIPLES
+#### Solutions Dimension
 
-1. **Background First** - Always complete Background Context before dimensions
-2. **One Question at a Time** - Never ask multiple questions in single message
-3. **Intelligent Questions** - Generate based on context, not templates
-4. **Live Updates** - Update artifacts after every answer
-5. **Research Tracker Active** - Monitor quality throughout (Issue #3)
-6. **Dimension Summaries** - Generate after each dimension (Issue #10)
-7. **Action Items** - Specific, actionable next steps (Issue #10)
-8. **Token Awareness** - Monitor constantly, pause at 90%
-9. **Continuation Ready** - Use artifacts for seamless continuation
-10. **Markdown Only** - No HTML details tags (Issue #4)
+**Focus:** EXPLORING SOLUTION SPACE, NOT DECIDING
+
+About opportunities, trade-offs, connecting research to approaches.
+
+**Investigation Areas:**
+1. Solution Space - What approaches considered? What haven't thought of?
+2. Past Attempts - What tried and failed? WHY failed? Lessons?
+3. Opportunities - What does research reveal? Trade-offs?
+4. Behavioral Success - What would success look like observably?
+5. Implementation Reality - What's realistic? Path forward? Quick wins?
+
+**Connect Research to Opportunities:**
+
+Based on findings from all dimensions:
+- User behaviors suggest X approach
+- Root causes point to Y solution space
+- Context requires Z constraints
+- Failed attempts say avoid A
+
+**Check Completion Criteria Before Summary:**
+
+- [ ] 3+ different approaches explored
+- [ ] Solutions address root causes (not symptoms)
+- [ ] Past attempts and failures understood
+- [ ] Success defined as observable behaviors
+
+**If NOT complete:** Continue asking questions
+
+**Dimension Summary:** Generate from actual findings with confirmation
 
 ---
 
-## 📋 CHANGELOG APPLIED
+### Final Synthesis
 
-**Version 6.1 includes:**
+After all 5 dimensions, generate comprehensive synthesis:
 
-- ✅ **New Feature** - Integrates with memory clearing precondition from Design Helper
-- ✅ **Issue #1** - Follows single question format from Design Helper
-- ✅ **Issue #3** - Research Tracker auto-activation with UX terminology
-- ✅ **Issue #4** - Removed all HTML tags, markdown only
-- ✅ **Issue #5** - Fixed repetitive headers ("You are in:" shown once)
-- ✅ **Issue #7** - Uses live artifacts created by Design Helper
-- ✅ **Issue #8** - Updates complete artifact structure from Design Helper
-- ✅ **Issue #9** - Updates changelog artifact throughout
-- ✅ **Issue #10** - Generates Dimension Summaries, Action Items, Final Summary
+```
+---
+
+# ✅ RESEARCH COMPLETE - PROBLEM FINDER
+
+## 📊 Research Summary
+
+**Questions Explored:** [Actual total]
+- Background: [Actual]
+- User: [Actual]
+- Problem: [Actual]
+- Context: [Actual]
+- Constraints: [Actual]
+- Solutions: [Actual]
+
+## 💡 Key Insights
+
+[Generate from ACTUAL cross-dimensional patterns]
+
+## 🎯 Strategic Recommendations
+
+[Based on ACTUAL findings]
+
+## ✅ Complete Action Items
+
+[All ACTUAL items from all dimensions]
+
+## 🔍 Trigger Points Identified
+
+[ACTUAL triggers discovered]
+
+## 🚀 What's Next?
+
+1. Generate final HTML report
+2. Explore specific area deeper
+3. Discuss recommendations
+4. Review action items
+
+---
+```
+
+---
+
+## 🚨 CRITICAL RULES
+
+1. ⚠️ **NO hardcoded questions ANYWHERE** - Generate from context
+2. ⚠️ **APPLY Research Quality Guide** - Domain context, completion checklist, question quality
+3. ⚠️ **NO fixed question limits** - Continue until completion criteria met
+4. ⚠️ **NO confirmation between questions** - Direct flow only
+5. ⚠️ **CHECK completion criteria** - Before providing dimension summary
+6. ⚠️ **CONFIRM at dimension completion** - Comprehensive summary with options
+7. ⚠️ **Challenge all assumptions** - Relentlessly, especially in Constraints
+8. ⚠️ **Focus on behaviors** - Not opinions, especially in User dimension
+9. ⚠️ **Ask "why" minimum 5 times** - In Problem dimension to reach root causes
+10. ⚠️ **Test all "constraints"** - Real vs assumed in Constraints dimension
+11. ⚠️ **NO live artifacts during research** - Chat only (except 95%)
+12. ⚠️ **Generate everything dynamically** - From actual findings
+13. ⚠️ **Follow global research guide role** - From Design Helper framework
+14. ⚠️ **Apply domain context** - Throughout all dimensions
+15. ⚠️ **Convert opinions to behavioral questions** - Use behavior vs opinion check
+
+**From Design Helper Protocols:**
+
+16. ⚠️ **Display progress at every dimension completion** - Using Progress Display Standards
+17. ⚠️ **Track token usage continuously** - Show capacity with dynamic recommendations
+18. ⚠️ **At 80%+: Offer new chat decision** - User decides, never force before 95%
+19. ⚠️ **At 95%: AUTO-CREATE both handoff and report** - Don't ask, just create
+20. ⚠️ **3.5-line continuation summary STRICT** - Never exceed, never less
+21. ⚠️ **Always show action items before resuming** - Offer update opportunity
+22. ⚠️ **Never repeat questions** - Continue numbering from previous chat
+23. ⚠️ **Detect assumptions in action items updates** - Always ask clarifying questions
+24. ⚠️ **Show complete help menu** - When requested, with resumption instructions
+25. ⚠️ **Preserve research state** - During help menu usage
 
 ---
 
 **Repository:** https://github.com/manojvenkatap/UX-Framework  
-**Version:** 6.1  
-**Status:** Production Ready ✅  
-**Last Updated:** October 29, 2025
+**Version:** 7.1 Enhanced  
+**Last Updated:** October 30, 2025
